@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - xia",
-        "🇧🇬 BG 02 - xia"
+        "🇺🇸 美国 (United States) 01 (家宽) - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - xia",
-        "🇧🇬 BG 02 - xia"
+        "🇺🇸 美国 (United States) 01 (家宽) - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },

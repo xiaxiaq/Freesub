@@ -18,70 +18,13 @@ proxies:
   client-fingerprint: firefox
 - name: 🇧🇬 BG 02 - xia
   type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 03 - xia
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 04 - xia
-  type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 05 - xia
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 06 - xia
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 07 - xia
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,11 +32,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - xia
   - 🇧🇬 BG 02 - xia
-  - 🇧🇬 BG 03 - xia
-  - 🇧🇬 BG 04 - xia
-  - 🇧🇬 BG 05 - xia
-  - 🇧🇬 BG 06 - xia
-  - 🇧🇬 BG 07 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,10 +39,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - xia
   - 🇧🇬 BG 02 - xia
-  - 🇧🇬 BG 03 - xia
-  - 🇧🇬 BG 04 - xia
-  - 🇧🇬 BG 05 - xia
-  - 🇧🇬 BG 06 - xia
-  - 🇧🇬 BG 07 - xia
 rules:
 - MATCH,PROXIES

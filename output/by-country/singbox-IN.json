@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - xia"
+        "🇮🇳 印度 (India) 01 - xia",
+        "🇮🇳 印度 (India) 02 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - xia"
+        "🇮🇳 印度 (India) 01 - xia",
+        "🇮🇳 印度 (India) 02 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },

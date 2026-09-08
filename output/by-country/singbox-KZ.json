@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xia",
-        "🇮🇶 IQ 02 - xia"
+        "🇰🇿 KZ 01 - xia",
+        "🇰🇿 KZ 02 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xia",
-        "🇮🇶 IQ 02 - xia"
+        "🇰🇿 KZ 01 - xia",
+        "🇰🇿 KZ 02 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
