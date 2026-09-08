@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇹 意大利 (Italy) 01 - xia",
+        "🇮🇹 意大利 (Italy) 02 - xia",
+        "🇮🇹 意大利 (Italy) 03 - xia",
+        "🇮🇹 意大利 (Italy) 04 - xia",
+        "🇮🇹 意大利 (Italy) 05 - xia",
+        "🇮🇹 意大利 (Italy) 06 - xia",
+        "🇮🇹 意大利 (Italy) 07 - xia",
+        "🇮🇹 意大利 (Italy) 08 - xia",
+        "🇮🇹 意大利 (Italy) 09 - xia",
+        "🇮🇹 意大利 (Italy) 10 - xia",
+        "🇮🇹 意大利 (Italy) 11 - xia",
+        "🇮🇹 意大利 (Italy) 12 - xia",
+        "🇮🇹 意大利 (Italy) 13 - xia"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇹 意大利 (Italy) 01 - xia",
+        "🇮🇹 意大利 (Italy) 02 - xia",
+        "🇮🇹 意大利 (Italy) 03 - xia",
+        "🇮🇹 意大利 (Italy) 04 - xia",
+        "🇮🇹 意大利 (Italy) 05 - xia",
+        "🇮🇹 意大利 (Italy) 06 - xia",
+        "🇮🇹 意大利 (Italy) 07 - xia",
+        "🇮🇹 意大利 (Italy) 08 - xia",
+        "🇮🇹 意大利 (Italy) 09 - xia",
+        "🇮🇹 意大利 (Italy) 10 - xia",
+        "🇮🇹 意大利 (Italy) 11 - xia",
+        "🇮🇹 意大利 (Italy) 12 - xia",
+        "🇮🇹 意大利 (Italy) 13 - xia"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

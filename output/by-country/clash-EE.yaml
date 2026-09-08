@@ -1,0 +1,166 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 EE 01 - xia
+  type: vless
+  server: 94.183.170.248
+  port: 8443
+  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy3.lockdwn.com
+- name: 🇪🇪 EE 02 - xia
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 03 - xia
+  type: vless
+  server: estproxy3.lockdwn.com
+  port: 8443
+  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy3.lockdwn.com
+- name: 🇪🇪 EE 04 - xia
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 05 - xia
+  type: vless
+  server: 94.183.170.248
+  port: 8443
+  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy3.lockdwn.com
+- name: 🇪🇪 EE 06 - xia
+  type: vless
+  server: 94.183.170.248
+  port: 443
+  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.248
+- name: 🇪🇪 EE 07 - xia
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 08 - xia
+  type: vless
+  server: 94.183.170.248
+  port: 8443
+  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy3.lockdwn.com
+- name: 🇪🇪 EE 09 - xia
+  type: vless
+  server: 94.183.170.248
+  port: 8443
+  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy3.lockdwn.com
+- name: 🇪🇪 EE 10 - xia
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 11 - xia
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 12 - xia
+  type: vless
+  server: 94.183.170.248
+  port: 8443
+  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy3.lockdwn.com
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 EE 01 - xia
+  - 🇪🇪 EE 02 - xia
+  - 🇪🇪 EE 03 - xia
+  - 🇪🇪 EE 04 - xia
+  - 🇪🇪 EE 05 - xia
+  - 🇪🇪 EE 06 - xia
+  - 🇪🇪 EE 07 - xia
+  - 🇪🇪 EE 08 - xia
+  - 🇪🇪 EE 09 - xia
+  - 🇪🇪 EE 10 - xia
+  - 🇪🇪 EE 11 - xia
+  - 🇪🇪 EE 12 - xia
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 EE 01 - xia
+  - 🇪🇪 EE 02 - xia
+  - 🇪🇪 EE 03 - xia
+  - 🇪🇪 EE 04 - xia
+  - 🇪🇪 EE 05 - xia
+  - 🇪🇪 EE 06 - xia
+  - 🇪🇪 EE 07 - xia
+  - 🇪🇪 EE 08 - xia
+  - 🇪🇪 EE 09 - xia
+  - 🇪🇪 EE 10 - xia
+  - 🇪🇪 EE 11 - xia
+  - 🇪🇪 EE 12 - xia
+rules:
+- MATCH,PROXIES

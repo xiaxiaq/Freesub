@@ -1,0 +1,57 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 6b6733fb-580b-411b-8bf8-51137c2aa037
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: restless-sky-eb31.438-aa8.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xia
+  type: vless
+  server: 104.17.21.32
+  port: 8880
+  uuid: 300f44af-adb8-42b7-b869-bef70b205d7e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: icy-rice-3c1c.340-680.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xia
+  type: ss
+  server: glance.asuscomm.com
+  port: 10099
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+  udp: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xia
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xia
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xia
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xia
+rules:
+- MATCH,PROXIES

@@ -1,0 +1,64 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇾 MY 01 - xia
+  type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+    headers:
+      Host: 38.60.168.98
+- name: 🇲🇾 MY 02 - xia
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: billowing-fire-a10b.301-d6c.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: billowing-fire-a10b.301-d6c.workers.dev
+- name: 🇲🇾 MY 03 - xia
+  type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+    headers:
+      Host: 38.60.168.98
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇾 MY 01 - xia
+  - 🇲🇾 MY 02 - xia
+  - 🇲🇾 MY 03 - xia
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇾 MY 01 - xia
+  - 🇲🇾 MY 02 - xia
+  - 🇲🇾 MY 03 - xia
+rules:
+- MATCH,PROXIES
