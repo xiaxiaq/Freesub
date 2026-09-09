@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 02 - xia
   type: vless
   server: 194.76.154.31
@@ -27,8 +27,17 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 CY 03 - xia
+  type: vless
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torr.wlrus.cfd
+- name: 🇨🇾 CY 04 - xia
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -39,8 +48,44 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇨🇾 CY 04 - xia
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 05 - xia
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 06 - xia
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 07 - xia
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 08 - xia
   type: vless
   server: 45.9.2.171
   port: 8443
@@ -58,6 +103,10 @@ proxy-groups:
   - 🇨🇾 CY 02 - xia
   - 🇨🇾 CY 03 - xia
   - 🇨🇾 CY 04 - xia
+  - 🇨🇾 CY 05 - xia
+  - 🇨🇾 CY 06 - xia
+  - 🇨🇾 CY 07 - xia
+  - 🇨🇾 CY 08 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,5 +116,9 @@ proxy-groups:
   - 🇨🇾 CY 02 - xia
   - 🇨🇾 CY 03 - xia
   - 🇨🇾 CY 04 - xia
+  - 🇨🇾 CY 05 - xia
+  - 🇨🇾 CY 06 - xia
+  - 🇨🇾 CY 07 - xia
+  - 🇨🇾 CY 08 - xia
 rules:
 - MATCH,PROXIES
