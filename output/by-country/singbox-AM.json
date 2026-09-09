@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - xia",
-        "🇨🇭 CH 02 - xia",
-        "🇨🇭 CH 03 - xia"
+        "🇦🇲 AM 01 - xia",
+        "🇦🇲 AM 02 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - xia",
-        "🇨🇭 CH 02 - xia",
-        "🇨🇭 CH 03 - xia"
+        "🇦🇲 AM 01 - xia",
+        "🇦🇲 AM 02 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },

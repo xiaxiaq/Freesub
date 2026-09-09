@@ -31,78 +31,19 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - xia
-  type: ss
-  server: 188.208.110.58
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - xia
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - xia
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - xia
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - xia
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - xia
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 09 - xia
   type: vless
   server: 185.112.249.201
   port: 8443
@@ -113,7 +54,7 @@ proxies:
   servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
     headers:
       Host: web-socket.tgdaosheng.ggff.net
 proxy-groups:
@@ -125,11 +66,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xia
   - 🇦🇪 阿联酋 (UAE) 03 - xia
   - 🇦🇪 阿联酋 (UAE) 04 - xia
-  - 🇦🇪 阿联酋 (UAE) 05 - xia
-  - 🇦🇪 阿联酋 (UAE) 06 - xia
-  - 🇦🇪 阿联酋 (UAE) 07 - xia
-  - 🇦🇪 阿联酋 (UAE) 08 - xia
-  - 🇦🇪 阿联酋 (UAE) 09 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -139,10 +75,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xia
   - 🇦🇪 阿联酋 (UAE) 03 - xia
   - 🇦🇪 阿联酋 (UAE) 04 - xia
-  - 🇦🇪 阿联酋 (UAE) 05 - xia
-  - 🇦🇪 阿联酋 (UAE) 06 - xia
-  - 🇦🇪 阿联酋 (UAE) 07 - xia
-  - 🇦🇪 阿联酋 (UAE) 08 - xia
-  - 🇦🇪 阿联酋 (UAE) 09 - xia
 rules:
 - MATCH,PROXIES
