@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - xia",
-        "🇸🇨 SC 02 - xia",
-        "🇸🇨 SC 03 - xia",
-        "🇸🇨 SC 04 - xia",
-        "🇸🇨 SC 05 - xia",
-        "🇸🇨 SC 06 - xia"
+        "🇸🇨 SC 01 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - xia",
-        "🇸🇨 SC 02 - xia",
-        "🇸🇨 SC 03 - xia",
-        "🇸🇨 SC 04 - xia",
-        "🇸🇨 SC 05 - xia",
-        "🇸🇨 SC 06 - xia"
+        "🇸🇨 SC 01 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
