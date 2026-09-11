@@ -15,147 +15,54 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 02 - xia
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03 - xia
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - xia
   type: ss
   server: 141.164.45.187
-  port: 7002
+  port: 9090
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 - xia
+- name: 🇰🇷 韩国 (South Korea) 03 - xia
   type: ss
   server: 141.164.45.187
   port: 6679
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
   udp: true
+- name: 🇰🇷 韩国 (South Korea) 04 - xia
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - xia
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 06 - xia
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - xia
   type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - xia
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 09 - xia
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 10 - xia
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - xia
-  type: vless
-  server: 172.64.80.1
-  port: 8880
-  uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
-  udp: true
-  tls: false
-  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /cctv13.m3u8
     headers:
-      Host: misty-mouse-141d.177-f18.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 12 - xia
-  type: ss
-  server: 141.164.45.187
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 13 - xia
-  type: ss
-  server: 141.164.45.187
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 14 - xia
-  type: ss
-  server: 141.164.45.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 15 - xia
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 16 - xia
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 17 - xia
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
+      Host: kr02.a0a.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -167,17 +74,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - xia
   - 🇰🇷 韩国 (South Korea) 05 - xia
   - 🇰🇷 韩国 (South Korea) 06 - xia
-  - 🇰🇷 韩国 (South Korea) 07 - xia
-  - 🇰🇷 韩国 (South Korea) 08 - xia
-  - 🇰🇷 韩国 (South Korea) 09 - xia
-  - 🇰🇷 韩国 (South Korea) 10 - xia
-  - 🇰🇷 韩国 (South Korea) 11 - xia
-  - 🇰🇷 韩国 (South Korea) 12 - xia
-  - 🇰🇷 韩国 (South Korea) 13 - xia
-  - 🇰🇷 韩国 (South Korea) 14 - xia
-  - 🇰🇷 韩国 (South Korea) 15 - xia
-  - 🇰🇷 韩国 (South Korea) 16 - xia
-  - 🇰🇷 韩国 (South Korea) 17 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -189,16 +85,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - xia
   - 🇰🇷 韩国 (South Korea) 05 - xia
   - 🇰🇷 韩国 (South Korea) 06 - xia
-  - 🇰🇷 韩国 (South Korea) 07 - xia
-  - 🇰🇷 韩国 (South Korea) 08 - xia
-  - 🇰🇷 韩国 (South Korea) 09 - xia
-  - 🇰🇷 韩国 (South Korea) 10 - xia
-  - 🇰🇷 韩国 (South Korea) 11 - xia
-  - 🇰🇷 韩国 (South Korea) 12 - xia
-  - 🇰🇷 韩国 (South Korea) 13 - xia
-  - 🇰🇷 韩国 (South Korea) 14 - xia
-  - 🇰🇷 韩国 (South Korea) 15 - xia
-  - 🇰🇷 韩国 (South Korea) 16 - xia
-  - 🇰🇷 韩国 (South Korea) 17 - xia
 rules:
 - MATCH,PROXIES
