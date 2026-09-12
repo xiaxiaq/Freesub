@@ -6,18 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - xia",
-        "🇮🇪 IE 02 - xia",
-        "🇮🇪 IE 03 - xia"
+        "🇫🇮 FI 01 - xia",
+        "🇫🇮 FI 02 - xia",
+        "🇫🇮 FI 03 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - xia",
-        "🇮🇪 IE 02 - xia",
-        "🇮🇪 IE 03 - xia"
+        "🇫🇮 FI 01 - xia",
+        "🇫🇮 FI 02 - xia",
+        "🇫🇮 FI 03 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },

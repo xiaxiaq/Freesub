@@ -6,26 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xia",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xia",
-        "🇨🇦 加拿大 (Canada) 03 (家宽) - xia",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xia",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xia",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xia",
-        "🇺🇸 美国 (United States) 06 (家宽) - xia",
-        "🇰🇷 韩国 (South Korea) 07 (家宽) - xia"
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xia",
+        "🇰🇷 韩国 (South Korea) 06 (家宽) - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xia",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xia",
-        "🇨🇦 加拿大 (Canada) 03 (家宽) - xia",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xia",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xia",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xia",
-        "🇺🇸 美国 (United States) 06 (家宽) - xia",
-        "🇰🇷 韩国 (South Korea) 07 (家宽) - xia"
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xia",
+        "🇰🇷 韩国 (South Korea) 06 (家宽) - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
