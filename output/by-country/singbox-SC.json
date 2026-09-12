@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - xia",
-        "🇲🇾 MY 02 - xia"
+        "🇸🇨 SC 01 - xia",
+        "🇸🇨 SC 02 - xia",
+        "🇸🇨 SC 03 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - xia",
-        "🇲🇾 MY 02 - xia"
+        "🇸🇨 SC 01 - xia",
+        "🇸🇨 SC 02 - xia",
+        "🇸🇨 SC 03 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
