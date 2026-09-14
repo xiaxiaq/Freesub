@@ -6,6 +6,53 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xia
   type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xia
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xia
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xia
+  type: vmess
   server: 47.83.19.148
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -20,7 +67,48 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xia
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xia
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 248b7825-58e7-41cc-899f-95e573e0127b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dry-violet-d6e0.38-431.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xia
+  type: vless
+  server: 172.67.133.170
+  port: 8080
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xia
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xia
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -35,6 +123,21 @@ proxies:
     path: /
     headers:
       Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xia
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.pubgmobile.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +145,13 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xia
   - 🇭🇰 中国香港 (Hong Kong) 02 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,5 +159,12 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xia
   - 🇭🇰 中国香港 (Hong Kong) 02 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xia
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xia
 rules:
 - MATCH,PROXIES
