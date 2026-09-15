@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xia
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -31,29 +31,29 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03 - xia
   type: vless
-  server: 89.125.147.199
-  port: 443
+  server: cdn.snobvpn.online
+  port: 80
   uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - xia
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /snob-ws
     headers:
-      Host: uae.unixzone.us
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 04 - xia
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 1423f399-74d3-4d99-90b9-bc7cae1af706
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 05 - xia
   type: vless
   server: 84.235.244.108
@@ -67,6 +67,72 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xia
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xia
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 08 - xia
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - xia
+  type: vless
+  server: 83.147.216.223
+  port: 4433
+  uuid: 55889b09-e315-4640-9404-e10834e7728e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 10 - xia
+  type: vless
+  server: 57.129.52.47
+  port: 52014
+  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +143,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xia
   - 🇦🇪 阿联酋 (UAE) 04 - xia
   - 🇦🇪 阿联酋 (UAE) 05 - xia
+  - 🇦🇪 阿联酋 (UAE) 06 - xia
+  - 🇦🇪 阿联酋 (UAE) 07 - xia
+  - 🇦🇪 阿联酋 (UAE) 08 - xia
+  - 🇦🇪 阿联酋 (UAE) 09 - xia
+  - 🇦🇪 阿联酋 (UAE) 10 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +158,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xia
   - 🇦🇪 阿联酋 (UAE) 04 - xia
   - 🇦🇪 阿联酋 (UAE) 05 - xia
+  - 🇦🇪 阿联酋 (UAE) 06 - xia
+  - 🇦🇪 阿联酋 (UAE) 07 - xia
+  - 🇦🇪 阿联酋 (UAE) 08 - xia
+  - 🇦🇪 阿联酋 (UAE) 09 - xia
+  - 🇦🇪 阿联酋 (UAE) 10 - xia
 rules:
 - MATCH,PROXIES
