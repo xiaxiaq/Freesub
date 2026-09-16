@@ -6,18 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - xia",
-        "🇸🇦 SA 02 - xia",
-        "🇸🇦 SA 03 - xia"
+        "🇨🇭 CH 01 - xia",
+        "🇨🇭 CH 02 - xia",
+        "🇨🇭 CH 03 - xia",
+        "🇨🇭 CH 04 - xia",
+        "🇨🇭 CH 05 - xia",
+        "🇨🇭 CH 06 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - xia",
-        "🇸🇦 SA 02 - xia",
-        "🇸🇦 SA 03 - xia"
+        "🇨🇭 CH 01 - xia",
+        "🇨🇭 CH 02 - xia",
+        "🇨🇭 CH 03 - xia",
+        "🇨🇭 CH 04 - xia",
+        "🇨🇭 CH 05 - xia",
+        "🇨🇭 CH 06 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },

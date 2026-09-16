@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - xia"
+        "🇷🇴 RO 01 - xia",
+        "🇷🇴 RO 02 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - xia"
+        "🇷🇴 RO 01 - xia",
+        "🇷🇴 RO 02 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },

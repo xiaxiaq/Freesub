@@ -25,6 +25,48 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
+- name: 🇫🇮 FI 03 - xia
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: global.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
+- name: 🇫🇮 FI 04 - xia
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: //---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 05 - xia
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +74,9 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - xia
   - 🇫🇮 FI 02 - xia
+  - 🇫🇮 FI 03 - xia
+  - 🇫🇮 FI 04 - xia
+  - 🇫🇮 FI 05 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +84,8 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - xia
   - 🇫🇮 FI 02 - xia
+  - 🇫🇮 FI 03 - xia
+  - 🇫🇮 FI 04 - xia
+  - 🇫🇮 FI 05 - xia
 rules:
 - MATCH,PROXIES
