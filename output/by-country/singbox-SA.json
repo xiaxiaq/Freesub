@@ -6,14 +6,40 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - xia"
+        "🇸🇦 SA 01 - xia",
+        "🇸🇦 SA 02 - xia",
+        "🇸🇦 SA 03 - xia",
+        "🇸🇦 SA 04 - xia",
+        "🇸🇦 SA 05 - xia",
+        "🇸🇦 SA 06 - xia",
+        "🇸🇦 SA 07 - xia",
+        "🇸🇦 SA 08 - xia",
+        "🇸🇦 SA 09 - xia",
+        "🇸🇦 SA 10 - xia",
+        "🇸🇦 SA 11 - xia",
+        "🇸🇦 SA 12 - xia",
+        "🇸🇦 SA 13 - xia",
+        "🇸🇦 SA 14 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - xia"
+        "🇸🇦 SA 01 - xia",
+        "🇸🇦 SA 02 - xia",
+        "🇸🇦 SA 03 - xia",
+        "🇸🇦 SA 04 - xia",
+        "🇸🇦 SA 05 - xia",
+        "🇸🇦 SA 06 - xia",
+        "🇸🇦 SA 07 - xia",
+        "🇸🇦 SA 08 - xia",
+        "🇸🇦 SA 09 - xia",
+        "🇸🇦 SA 10 - xia",
+        "🇸🇦 SA 11 - xia",
+        "🇸🇦 SA 12 - xia",
+        "🇸🇦 SA 13 - xia",
+        "🇸🇦 SA 14 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
