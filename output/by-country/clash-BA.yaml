@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 - xia
+- name: 🇧🇦 BA 01 - xia
   type: vless
-  server: 31.43.179.20
+  server: 77.74.228.123
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 - xia
+  - 🇧🇦 BA 01 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 - xia
+  - 🇧🇦 BA 01 - xia
 rules:
 - MATCH,PROXIES
