@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇮 SI 01 - xia",
-        "🇸🇮 SI 02 - xia"
+        "🇰🇿 KZ 01 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇮 SI 01 - xia",
-        "🇸🇮 SI 02 - xia"
+        "🇰🇿 KZ 01 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
