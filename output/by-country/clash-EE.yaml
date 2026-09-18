@@ -18,12 +18,13 @@ proxies:
     headers:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - xia
-  type: ss
+  type: vless
   server: 212.87.190.124
-  port: 99
-  cipher: chacha20-ietf-poly1305
-  password: 6nQnSKAxCLJSZbg7KA94QA
+  port: 3
+  uuid: 6049e972-419e-43bc-932c-4032be6d1b5b
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇪🇪 EE 03 - xia
   type: vless
   server: 94.183.170.135
