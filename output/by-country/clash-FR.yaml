@@ -12,22 +12,23 @@ proxies:
   password: BqnqToih0PbU
   udp: true
 - name: 🇫🇷 法国 (France) 02 - xia
-  type: vless
-  server: 158.180.231.216
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vws/
+    path: /
     headers:
-      Host: bab-6.site
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 - name: 🇫🇷 法国 (France) 03 - xia
   type: vless
-  server: 149.202.58.99
+  server: 81.95.4.189
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -41,6 +42,32 @@ proxies:
       Host: bab-6.site
 - name: 🇫🇷 法国 (France) 04 - xia
   type: vless
+  server: 199.232.78.170
+  port: 443
+  uuid: XpnTeam-6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 05 - xia
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 06 - xia
+  type: vless
   server: 54.37.136.194
   port: 2053
   uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
@@ -51,7 +78,88 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 - xia
+- name: 🇫🇷 法国 (France) 07 - xia
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 08 - xia
+  type: vless
+  server: 147.45.42.73
+  port: 20443
+  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇫🇷 法国 (France) 09 - xia
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 10 - xia
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 11 - xia
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 12 - xia
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 13 - xia
   type: vless
   server: 149.202.58.99
   port: 443
@@ -75,6 +183,14 @@ proxy-groups:
   - 🇫🇷 法国 (France) 03 - xia
   - 🇫🇷 法国 (France) 04 - xia
   - 🇫🇷 法国 (France) 05 - xia
+  - 🇫🇷 法国 (France) 06 - xia
+  - 🇫🇷 法国 (France) 07 - xia
+  - 🇫🇷 法国 (France) 08 - xia
+  - 🇫🇷 法国 (France) 09 - xia
+  - 🇫🇷 法国 (France) 10 - xia
+  - 🇫🇷 法国 (France) 11 - xia
+  - 🇫🇷 法国 (France) 12 - xia
+  - 🇫🇷 法国 (France) 13 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,5 +201,13 @@ proxy-groups:
   - 🇫🇷 法国 (France) 03 - xia
   - 🇫🇷 法国 (France) 04 - xia
   - 🇫🇷 法国 (France) 05 - xia
+  - 🇫🇷 法国 (France) 06 - xia
+  - 🇫🇷 法国 (France) 07 - xia
+  - 🇫🇷 法国 (France) 08 - xia
+  - 🇫🇷 法国 (France) 09 - xia
+  - 🇫🇷 法国 (France) 10 - xia
+  - 🇫🇷 法国 (France) 11 - xia
+  - 🇫🇷 法国 (France) 12 - xia
+  - 🇫🇷 法国 (France) 13 - xia
 rules:
 - MATCH,PROXIES
