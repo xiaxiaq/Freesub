@@ -16,7 +16,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 02 - xia
@@ -30,7 +30,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - xia
   type: vmess
   server: 152.67.8.205
@@ -43,60 +43,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 04 - xia
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - xia
-  type: vless
-  server: 104.21.69.118
-  port: 443
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
-- name: 🇮🇳 印度 (India) 06 - xia
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 07 - xia
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 proxy-groups:
@@ -107,10 +54,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xia
   - 🇮🇳 印度 (India) 02 - xia
   - 🇮🇳 印度 (India) 03 - xia
-  - 🇮🇳 印度 (India) 04 - xia
-  - 🇮🇳 印度 (India) 05 - xia
-  - 🇮🇳 印度 (India) 06 - xia
-  - 🇮🇳 印度 (India) 07 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,9 +62,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xia
   - 🇮🇳 印度 (India) 02 - xia
   - 🇮🇳 印度 (India) 03 - xia
-  - 🇮🇳 印度 (India) 04 - xia
-  - 🇮🇳 印度 (India) 05 - xia
-  - 🇮🇳 印度 (India) 06 - xia
-  - 🇮🇳 印度 (India) 07 - xia
 rules:
 - MATCH,PROXIES
