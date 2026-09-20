@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xia
   type: vless
+  server: 31.43.179.20
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 02 - xia
+  type: vless
+  server: 31.43.179.36
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 03 - xia
+  type: vless
   server: 31.43.179.36
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -18,9 +46,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 02 - xia
+- name: 🇰🇿 KZ 04 - xia
   type: vless
-  server: 31.43.179.25
+  server: 31.43.179.8
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -39,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇰🇿 KZ 01 - xia
   - 🇰🇿 KZ 02 - xia
+  - 🇰🇿 KZ 03 - xia
+  - 🇰🇿 KZ 04 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇰🇿 KZ 01 - xia
   - 🇰🇿 KZ 02 - xia
+  - 🇰🇿 KZ 03 - xia
+  - 🇰🇿 KZ 04 - xia
 rules:
 - MATCH,PROXIES
