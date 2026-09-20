@@ -5,15 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - xia
-  type: ss
-  server: 143.47.179.231
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kAoIHaeRoTe0gnOjRPghW5nXrZUcx+gSKXcRVk9/ToE=
+  type: vless
+  server: 45.131.5.80
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇳🇱 荷兰 (Netherlands) 02 - xia
   type: vless
-  server: 45.131.5.241
+  server: 45.131.5.33
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -27,114 +34,68 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇳🇱 荷兰 (Netherlands) 03 - xia
   type: ss
-  server: 82.38.31.176
+  server: 158.173.20.208
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 04 - xia
+  type: ss
+  server: 82.38.31.179
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 04 - xia
-  type: ss
-  server: 193.29.139.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 05 - xia
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 199.232.237.79
+  port: 443
+  uuid: turboo-server
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: turboo-server-telegram.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: turboo-server-telegram.com
 - name: 🇳🇱 荷兰 (Netherlands) 06 - xia
   type: ss
-  server: 193.29.139.225
+  server: 82.38.31.149
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 07 - xia
   type: ss
-  server: 82.38.31.214
+  server: 82.38.31.205
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 08 - xia
   type: vless
-  server: 45.131.5.248
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 188.166.49.168
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: cdn8848.776676.xyz
 - name: 🇳🇱 荷兰 (Netherlands) 09 - xia
   type: ss
-  server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 10 - xia
-  type: vless
-  server: 45.131.7.162
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 11 - xia
-  type: vless
-  server: 45.131.6.205
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 12 - xia
-  type: ss
-  server: 82.38.31.217
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 13 - xia
-  type: ss
-  server: 82.38.31.186
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 14 - xia
-  type: ss
-  server: 82.38.31.34
+  server: 82.38.31.61
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 15 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 10 - xia
   type: vless
   server: 77.110.117.199
   port: 9443
@@ -148,188 +109,284 @@ proxies:
     path: /nl01-ws-8e47a
     headers:
       Host: hub-nl-01.hanvpn.cc
-- name: 🇳🇱 荷兰 (Netherlands) 16 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 11 - xia
   type: ss
-  server: 108.181.126.122
-  port: 8388
+  server: 82.38.31.176
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 12 - xia
+  type: vless
+  server: 45.131.4.181
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇳🇱 荷兰 (Netherlands) 13 - xia
+  type: ss
+  server: 82.38.31.214
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 14 - xia
+  type: ss
+  server: 82.38.31.216
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 15 - xia
+  type: ss
+  server: 82.38.31.82
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 16 - xia
+  type: vless
+  server: x-ui.panelsazahb.dpdns.org
+  port: 81
+  uuid: 138a2254-7133-42a8-a454-fac19ec60999
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇳🇱 荷兰 (Netherlands) 17 - xia
+  type: vless
+  server: 31.76.76.28
+  port: 443
+  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 31.76.76.28
+- name: 🇳🇱 荷兰 (Netherlands) 18 - xia
+  type: ss
+  server: 82.38.31.195
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 19 - xia
   type: ss
   server: 82.38.31.201
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 18 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 20 - xia
+  type: ss
+  server: 82.38.31.155
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 21 - xia
+  type: ss
+  server: 134.98.148.247
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: rjjFYsfUkf7OHvPeiSPjvwe1J7PQhgqPvvY4toBG8Z4=
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 22 - xia
+  type: vless
+  server: 45.131.5.248
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇳🇱 荷兰 (Netherlands) 23 - xia
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 24 - xia
+  type: ss
+  server: 193.29.139.225
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 25 - xia
+  type: ss
+  server: 193.29.139.168
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 26 - xia
   type: ss
   server: 158.173.20.208
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 19 - xia
-  type: ss
-  server: 141.148.234.37
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EJZfJJpreInajdnfzw0HEza6o+tOGQpipfqP/3LzZmE=
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 20 - xia
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 21 - xia
-  type: vless
-  server: 151.242.2.81
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf9.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf9.rumedia-cdn.com
-- name: 🇳🇱 荷兰 (Netherlands) 22 - xia
-  type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 23 - xia
-  type: vless
-  server: 163.172.214.188
-  port: 80
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-- name: 🇳🇱 荷兰 (Netherlands) 24 - xia
-  type: vless
-  server: sc-thenetherlands1.09vpn.com
-  port: 80
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-- name: 🇳🇱 荷兰 (Netherlands) 25 - xia
-  type: ss
-  server: 82.38.31.164
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 26 - xia
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-il
-    headers:
-      Host: tgmansion.site
 - name: 🇳🇱 荷兰 (Netherlands) 27 - xia
   type: ss
-  server: 82.38.31.69
+  server: 82.38.31.9
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 28 - xia
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  type: vless
+  server: 45.131.5.35
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇳🇱 荷兰 (Netherlands) 29 - xia
   type: ss
-  server: 82.38.31.162
-  port: 443
+  server: 82.38.31.10
+  port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 30 - xia
-  type: vmess
-  server: 45.90.106.24
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 31 - xia
   type: ss
-  server: 82.38.31.39
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 32 - xia
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 33 - xia
-  type: ss
-  server: 82.38.31.213
+  server: 82.38.31.206
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 31 - xia
+  type: vless
+  server: 178.255.222.200
+  port: 81
+  uuid: 138a2254-7133-42a8-a454-fac19ec60999
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 (Netherlands) 32 - xia
+  type: vless
+  server: 45.131.6.205
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇳🇱 荷兰 (Netherlands) 33 - xia
+  type: ss
+  server: 82.38.31.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 34 - xia
+  type: ss
+  server: 193.29.139.204
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 35 - xia
   type: ss
   server: 108.181.58.239
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: CJmTCCx7Ltud
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 35 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 36 - xia
   type: ss
-  server: 193.29.139.132
+  server: 82.38.31.212
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 36 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 37 - xia
   type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: 151.243.173.119
+  port: 33736
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   alterId: 0
   cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: ''
+- name: 🇳🇱 荷兰 (Netherlands) 38 - xia
+  type: vless
+  server: 31.76.76.28
+  port: 8443
+  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 37 - xia
+  servername: neth4.lckdwn.ru
+- name: 🇳🇱 荷兰 (Netherlands) 39 - xia
+  type: ss
+  server: 193.29.139.151
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 40 - xia
+  type: ss
+  server: 82.38.31.156
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 41 - xia
+  type: ss
+  server: 193.29.139.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 42 - xia
+  type: ss
+  server: 193.29.139.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 43 - xia
+  type: ss
+  server: 82.38.31.162
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 44 - xia
   type: vless
   server: 199.232.237.79
   port: 443
@@ -343,103 +400,74 @@ proxies:
     path: /
     headers:
       Host: turboo-server-telegram.com
-- name: 🇳🇱 荷兰 (Netherlands) 38 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 45 - xia
   type: ss
-  server: 82.38.31.179
+  server: 82.38.31.213
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 39 - xia
-  type: ss
-  server: 193.29.139.188
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 46 - xia
+  type: vless
+  server: 45.131.5.241
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 40 - xia
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇳🇱 荷兰 (Netherlands) 47 - xia
   type: ss
-  server: 82.38.31.191
+  server: 193.29.139.223
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 41 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 48 - xia
+  type: vless
+  server: 31.76.76.28
+  port: 443
+  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 31.76.76.28
+- name: 🇳🇱 荷兰 (Netherlands) 49 - xia
   type: ss
   server: 82.38.31.193
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 42 - xia
-  type: ss
-  server: 82.38.31.149
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 43 - xia
-  type: ss
-  server: 82.38.31.61
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 44 - xia
-  type: ss
-  server: 193.29.139.202
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 45 - xia
-  type: ss
-  server: 82.38.31.10
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 46 - xia
-  type: ss
-  server: 82.38.31.156
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 47 - xia
-  type: ss
-  server: 82.38.31.7
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 48 - xia
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 49 - xia
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 50 - xia
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  type: vless
+  server: 45.131.5.35
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇳🇱 荷兰 (Netherlands) 51 - xia
   type: ss
-  server: 134.98.148.247
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rjjFYsfUkf7OHvPeiSPjvwe1J7PQhgqPvvY4toBG8Z4=
+  server: 82.38.31.175
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 52 - xia
   type: ss
@@ -450,19 +478,56 @@ proxies:
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 53 - xia
   type: ss
-  server: 82.38.31.175
+  server: 193.29.139.188
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 54 - xia
   type: ss
-  server: 193.29.139.168
+  server: 193.29.139.235
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 55 - xia
+  type: ss
+  server: 193.29.139.235
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 56 - xia
+  type: vless
+  server: 31.76.76.28
+  port: 8443
+  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth4.lckdwn.ru
+- name: 🇳🇱 荷兰 (Netherlands) 57 - xia
+  type: ss
+  server: 82.38.31.69
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 58 - xia
+  type: ss
+  server: 193.29.139.212
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 55 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 59 - xia
+  type: ss
+  server: 82.38.31.175
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 60 - xia
   type: vless
   server: 45.131.5.248
   port: 443
@@ -476,87 +541,41 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 56 - xia
-  type: ss
-  server: 108.181.126.122
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 57 - xia
-  type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 58 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 61 - xia
   type: vless
-  server: 199.232.237.79
+  server: 177.3.208.65
   port: 443
-  uuid: turboo-server
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: turboo-server-telegram.com
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-il
     headers:
-      Host: turboo-server-telegram.com
-- name: 🇳🇱 荷兰 (Netherlands) 59 - xia
-  type: vless
-  server: 31.76.76.28
-  port: 8443
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth4.lckdwn.ru
-- name: 🇳🇱 荷兰 (Netherlands) 60 - xia
+      Host: tgmansion.site
+- name: 🇳🇱 荷兰 (Netherlands) 62 - xia
   type: ss
-  server: 82.38.31.26
+  server: 193.29.139.234
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: 4a2rfixophdjffa8KVA4Aa
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 61 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 63 - xia
   type: ss
-  server: 82.38.31.212
+  server: 193.29.139.234
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 64 - xia
+  type: ss
+  server: 82.38.31.217
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 62 - xia
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 63 - xia
-  type: vless
-  server: 31.77.7.122
-  port: 8443
-  uuid: 36cd557b-2b3d-46d3-8071-c77dd9cf7623
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TqsHQWg0oFULyLiaXe9vuwYXmLR6mRLiL376GJbX2Cs
-  servername: www.nokia.com
-  client-fingerprint: ios
-- name: 🇳🇱 荷兰 (Netherlands) 64 - xia
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇳🇱 荷兰 (Netherlands) 65 - xia
   type: vless
   server: 45.131.6.249
@@ -572,88 +591,90 @@ proxies:
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇳🇱 荷兰 (Netherlands) 66 - xia
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 108.181.126.122
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇳🇱 荷兰 (Netherlands) 67 - xia
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 82.38.31.34
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇳🇱 荷兰 (Netherlands) 68 - xia
   type: ss
-  server: 82.38.31.198
+  server: 82.38.31.210
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 69 - xia
   type: ss
-  server: 82.38.31.13
+  server: 82.38.31.174
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 70 - xia
-  type: vless
-  server: 45.131.4.41
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
 - name: 🇳🇱 荷兰 (Netherlands) 71 - xia
   type: vless
-  server: 45.131.4.181
+  server: 199.232.237.79
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: turboo-server
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: turboo-server-telegram.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: turboo-server-telegram.com
 - name: 🇳🇱 荷兰 (Netherlands) 72 - xia
   type: ss
-  server: 82.38.31.216
+  server: 82.38.31.186
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 73 - xia
-  type: vmess
-  server: 45.90.106.24
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 82.38.31.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 74 - xia
+  type: vless
+  server: 199.232.237.79
+  port: 443
+  uuid: turboo-server
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 74 - xia
+  servername: turboo-server-telegram.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: turboo-server-telegram.com
+- name: 🇳🇱 荷兰 (Netherlands) 75 - xia
+  type: ss
+  server: 92.5.205.98
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: CY6yzdXMv0dk3DReTOh+bj0cmSdf9VtjLLyGmB9S8Rc=
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 76 - xia
   type: vless
   server: 151.242.2.81
   port: 443
@@ -667,144 +688,124 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
-- name: 🇳🇱 荷兰 (Netherlands) 75 - xia
-  type: ss
-  server: 82.38.31.82
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 76 - xia
-  type: ss
-  server: 82.38.31.36
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 77 - xia
-  type: ss
-  server: 82.38.31.9
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  type: vless
+  server: 45.131.4.41
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇳🇱 荷兰 (Netherlands) 78 - xia
   type: ss
-  server: 158.173.20.208
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 108.181.126.122
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 79 - xia
-  type: vless
-  server: 45.131.5.33
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 80 - xia
-  type: vmess
-  server: 45.90.106.24
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 81 - xia
-  type: vless
-  server: 45.131.5.35
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 82 - xia
   type: ss
-  server: 82.38.31.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 83 - xia
-  type: ss
-  server: 82.38.31.174
+  server: 82.38.31.13
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 84 - xia
-  type: vless
-  server: 45.131.5.80
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 85 - xia
-  type: ss
-  server: 82.38.31.195
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 86 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 80 - xia
   type: ss
   server: 82.38.31.189
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 87 - xia
-  type: ss
-  server: 82.38.31.66
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 88 - xia
+- name: 🇳🇱 荷兰 (Netherlands) 81 - xia
   type: vless
-  server: 31.76.76.28
-  port: 8443
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  server: 199.232.237.79
+  port: 443
+  uuid: 60a2998c-cd85-562e-a3fd-396e4925dd3a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth4.lckdwn.ru
-- name: 🇳🇱 荷兰 (Netherlands) 89 - xia
+  servername: turboo-server-telegram.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: turboo-server-telegram.com
+- name: 🇳🇱 荷兰 (Netherlands) 82 - xia
   type: vless
-  server: 31.76.76.28
+  server: 45.131.5.241
   port: 443
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇳🇱 荷兰 (Netherlands) 83 - xia
+  type: vless
+  server: 163.172.214.188
+  port: 80
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands1.09vpn.com
+- name: 🇳🇱 荷兰 (Netherlands) 84 - xia
+  type: ss
+  server: 82.38.31.191
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 85 - xia
+  type: vless
+  server: 45.131.7.162
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
     path: /
     headers:
-      Host: 31.76.76.28
+      Host: xi.tbv.ccwu.cc
+- name: 🇳🇱 荷兰 (Netherlands) 86 - xia
+  type: ss
+  server: 82.38.31.26
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 87 - xia
+  type: ss
+  server: 82.38.31.36
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 88 - xia
+  type: ss
+  server: 193.29.139.197
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -898,7 +899,6 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 86 - xia
   - 🇳🇱 荷兰 (Netherlands) 87 - xia
   - 🇳🇱 荷兰 (Netherlands) 88 - xia
-  - 🇳🇱 荷兰 (Netherlands) 89 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -992,6 +992,5 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 86 - xia
   - 🇳🇱 荷兰 (Netherlands) 87 - xia
   - 🇳🇱 荷兰 (Netherlands) 88 - xia
-  - 🇳🇱 荷兰 (Netherlands) 89 - xia
 rules:
 - MATCH,PROXIES
