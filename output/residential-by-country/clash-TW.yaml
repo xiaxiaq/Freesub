@@ -35,13 +35,6 @@ proxies:
     headers:
       Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xia
   type: vmess
   server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   port: 443
@@ -65,7 +58,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xia
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,6 +66,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xia
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xia
 rules:
 - MATCH,PROXIES
