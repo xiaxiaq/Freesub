@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - xia"
+        "🇻🇳 VN 01 - xia",
+        "🇻🇳 VN 02 - xia",
+        "🇻🇳 VN 03 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - xia"
+        "🇻🇳 VN 01 - xia",
+        "🇻🇳 VN 02 - xia",
+        "🇻🇳 VN 03 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
