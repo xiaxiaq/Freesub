@@ -6,7 +6,21 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xia
   type: vless
-  server: 195.85.23.217
+  server: 195.85.23.88
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 02 - xia
+  type: vless
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,23 +32,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 02 - xia
-  type: vless
-  server: 188.114.97.8
-  port: 8443
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 - name: 🇨🇿 CZ 03 - xia
   type: vless
-  server: 195.85.23.88
+  server: 195.85.23.45
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -48,21 +48,21 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 04 - xia
   type: vless
-  server: 46.101.230.110
+  server: 195.85.23.29
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /drama?ed=2560
+    path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 05 - xia
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.47
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -76,7 +76,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 06 - xia
   type: vless
-  server: cz1.zuoai.cf
+  server: 195.85.23.111
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -90,7 +90,49 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 07 - xia
   type: vless
-  server: 195.85.23.217
+  server: 195.85.23.219
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 08 - xia
+  type: vless
+  server: 195.85.23.75
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 09 - xia
+  type: vless
+  server: cz1.zuoai.cf
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 10 - xia
+  type: vless
+  server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -102,9 +144,37 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - xia
+- name: 🇨🇿 CZ 11 - xia
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 12 - xia
+  type: vless
+  server: 195.85.23.248
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 13 - xia
+  type: vless
+  server: 195.85.23.217
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -129,6 +199,11 @@ proxy-groups:
   - 🇨🇿 CZ 06 - xia
   - 🇨🇿 CZ 07 - xia
   - 🇨🇿 CZ 08 - xia
+  - 🇨🇿 CZ 09 - xia
+  - 🇨🇿 CZ 10 - xia
+  - 🇨🇿 CZ 11 - xia
+  - 🇨🇿 CZ 12 - xia
+  - 🇨🇿 CZ 13 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +217,10 @@ proxy-groups:
   - 🇨🇿 CZ 06 - xia
   - 🇨🇿 CZ 07 - xia
   - 🇨🇿 CZ 08 - xia
+  - 🇨🇿 CZ 09 - xia
+  - 🇨🇿 CZ 10 - xia
+  - 🇨🇿 CZ 11 - xia
+  - 🇨🇿 CZ 12 - xia
+  - 🇨🇿 CZ 13 - xia
 rules:
 - MATCH,PROXIES

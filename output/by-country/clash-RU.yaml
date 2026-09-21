@@ -6,33 +6,61 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xia
   type: vless
-  server: 172.67.173.138
-  port: 443
-  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
+  server: 157.173.125.214
+  port: 2087
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: odd-disk-98c5.assassincreed4048.workers.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /sync
+    path: '%2Fredirect%2Fchina%2Fview%3Fed%3D2560'
     headers:
-      Host: odd-disk-98c5.assassincreed4048.workers.dev
+      Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xia
   type: vless
-  server: 154.194.0.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  server: 185.125.100.76
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /trade/game/movies
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xia
+  type: vless
+  server: 129.151.64.169
+  port: 31867
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /files
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xia
+  type: vless
+  server: 5.104.107.80
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xia
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xia
   type: vless
   server: 46.8.200.91
   port: 443
@@ -46,32 +74,20 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xia
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xia
   type: vless
-  server: 104.18.39.218
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 217.12.206.160
+  port: 81
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: '%2Fmembers%2Fplaylist%3Fed%3D2560'
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xia
-  type: vless
-  server: 104.21.12.116
-  port: 8880
-  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lucky-cake-4f58.318-5ee.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +98,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xia
   - 🇷🇺 俄罗斯 (Russia) 04 - xia
   - 🇷🇺 俄罗斯 (Russia) 05 - xia
+  - 🇷🇺 俄罗斯 (Russia) 06 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,5 +109,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xia
   - 🇷🇺 俄罗斯 (Russia) 04 - xia
   - 🇷🇺 俄罗斯 (Russia) 05 - xia
+  - 🇷🇺 俄罗斯 (Russia) 06 - xia
 rules:
 - MATCH,PROXIES
