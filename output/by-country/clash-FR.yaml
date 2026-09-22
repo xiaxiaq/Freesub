@@ -5,6 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xia
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 02 - xia
+  type: ss
+  server: jgzt1997.qivfelo.ir
+  port: 5050
+  cipher: chacha20-ietf-poly1305
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
+  udp: true
+- name: 🇫🇷 法国 (France) 03 - xia
   type: vless
   server: 34.155.10.226
   port: 443
@@ -16,34 +34,20 @@ proxies:
     public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 02 - xia
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇫🇷 法国 (France) 03 - xia
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
 - name: 🇫🇷 法国 (France) 04 - xia
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 45.38.228.237
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vws/
+    path: /
     headers:
-      Host: 149.202.58.99
+      Host: shuma.ccwu.cc
 - name: 🇫🇷 法国 (France) 05 - xia
   type: vless
   server: 34.155.10.226
@@ -58,18 +62,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 06 - xia
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 91.107.252.248
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vws/
+    path: /
     headers:
-      Host: 149.202.58.99
+      Host: shuma.ccwu.cc
 - name: 🇫🇷 法国 (France) 07 - xia
   type: vmess
   server: 162.19.204.71
@@ -83,48 +87,100 @@ proxies:
   servername: ''
 - name: 🇫🇷 法国 (France) 08 - xia
   type: vless
-  server: 199.232.246.236
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: teranko.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 09 - xia
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
+  server: 51.44.119.98
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 09 - xia
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 10 - xia
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 11 - xia
+  type: vless
+  server: 45.155.169.170
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 12 - xia
+  type: vless
+  server: 13.39.211.208
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 13 - xia
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 14 - xia
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 15 - xia
+  type: vless
+  server: 147.90.26.57
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 10 - xia
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 16 - xia
   type: vless
-  server: 45.131.4.45
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-56a63c8d27cf
+  server: 51.44.119.98
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: z-e-u-s-panel-h28k80.amipeito.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/56a63c8d27cf
-    headers:
-      Host: z-e-u-s-panel-h28k80.amipeito.workers.dev
-- name: 🇫🇷 法国 (France) 11 - xia
+- name: 🇫🇷 法国 (France) 17 - xia
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -155,6 +211,12 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - xia
   - 🇫🇷 法国 (France) 10 - xia
   - 🇫🇷 法国 (France) 11 - xia
+  - 🇫🇷 法国 (France) 12 - xia
+  - 🇫🇷 法国 (France) 13 - xia
+  - 🇫🇷 法国 (France) 14 - xia
+  - 🇫🇷 法国 (France) 15 - xia
+  - 🇫🇷 法国 (France) 16 - xia
+  - 🇫🇷 法国 (France) 17 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -171,5 +233,11 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - xia
   - 🇫🇷 法国 (France) 10 - xia
   - 🇫🇷 法国 (France) 11 - xia
+  - 🇫🇷 法国 (France) 12 - xia
+  - 🇫🇷 法国 (France) 13 - xia
+  - 🇫🇷 法国 (France) 14 - xia
+  - 🇫🇷 法国 (France) 15 - xia
+  - 🇫🇷 法国 (France) 16 - xia
+  - 🇫🇷 法国 (France) 17 - xia
 rules:
 - MATCH,PROXIES
