@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - xia"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - xia"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
