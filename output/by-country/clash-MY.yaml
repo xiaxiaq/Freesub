@@ -4,30 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - xia
-  type: vless
-  server: 167.82.101.251
-  port: 80
-  uuid: 0e9f7d2a-2f92-475e-b484-e79568a8a1a2
+- name: 🇲🇾 MY 01 - xia
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Mankiamtr.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - xia
+  - 🇲🇾 MY 01 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - xia
+  - 🇲🇾 MY 01 - xia
 rules:
 - MATCH,PROXIES
