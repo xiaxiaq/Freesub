@@ -4,7 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xia
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xia
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia
   type: vless
   server: 60.248.219.78
   port: 443
@@ -18,58 +38,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia
-  type: ss
-  server: 36.224.141.124
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 03 (家宽) - xia
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇯🇵 日本 (Japan) 04 (家宽) - xia
-  type: vless
-  server: 46.101.46.169
-  port: 486
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xia
+  - 🇺🇸 美国 (United States) 01 (家宽) - xia
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia
-  - 🇳🇱 荷兰 (Netherlands) 03 (家宽) - xia
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xia
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xia
+  - 🇺🇸 美国 (United States) 01 (家宽) - xia
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xia
-  - 🇳🇱 荷兰 (Netherlands) 03 (家宽) - xia
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xia
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xia
 rules:
 - MATCH,PROXIES
