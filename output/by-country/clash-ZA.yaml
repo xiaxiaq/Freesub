@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xia
+- name: 🇿🇦 ZA 01 - xia
   type: ss
-  server: 74.234.59.81
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: znEtjgHLXH4FBLic
+  password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇮🇪 IE 02 - xia
+- name: 🇿🇦 ZA 02 - xia
   type: ss
-  server: 74.234.59.81
+  server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: znEtjgHLXH4FBLic
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xia
-  - 🇮🇪 IE 02 - xia
+  - 🇿🇦 ZA 01 - xia
+  - 🇿🇦 ZA 02 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xia
-  - 🇮🇪 IE 02 - xia
+  - 🇿🇦 ZA 01 - xia
+  - 🇿🇦 ZA 02 - xia
 rules:
 - MATCH,PROXIES

@@ -5,43 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xia
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  type: vmess
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
-    headers:
-      Host: c12.com
 - name: 🇫🇮 FI 02 - xia
-  type: vless
-  server: karo.rick313.dpdns.org
-  port: 2087
-  uuid: 2e4e6812-be87-415b-a2e8-b0e17e9f2da7
+  type: ss
+  server: p1tun2.greewebservices.ir
+  port: 2060
+  cipher: chacha20-ietf-poly1305
+  password: cVvgP0Bz69hsErPBvqKbwQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: karo.rick313.dpdns.org
 - name: 🇫🇮 FI 03 - xia
-  type: ss
-  server: p1tun3.greewebservices.ir
-  port: 2070
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
-  udp: true
-- name: 🇫🇮 FI 04 - xia
-  type: ss
-  server: p1tun4.greewebservices.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
-  udp: true
-- name: 🇫🇮 FI 05 - xia
   type: vless
   server: k2.cloud--vpn.site
   port: 443
@@ -52,9 +32,16 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?edTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /
     headers:
       Host: c12.com
+- name: 🇫🇮 FI 04 - xia
+  type: ss
+  server: p1tun4.greewebservices.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: cVvgP0Bz69hsErPBvqKbwQ
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +51,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - xia
   - 🇫🇮 FI 03 - xia
   - 🇫🇮 FI 04 - xia
-  - 🇫🇮 FI 05 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,6 +60,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - xia
   - 🇫🇮 FI 03 - xia
   - 🇫🇮 FI 04 - xia
-  - 🇫🇮 FI 05 - xia
 rules:
 - MATCH,PROXIES
