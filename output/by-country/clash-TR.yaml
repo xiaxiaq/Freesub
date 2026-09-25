@@ -24,6 +24,36 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - xia
+  type: vmess
+  server: 206.1.98.34
+  port: 26066
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇷 土耳其 (Turkey) 04 - xia
+  type: vmess
+  server: 206.1.98.34
+  port: 26066
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +61,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xia
   - 🇹🇷 土耳其 (Turkey) 02 - xia
+  - 🇹🇷 土耳其 (Turkey) 03 - xia
+  - 🇹🇷 土耳其 (Turkey) 04 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +70,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xia
   - 🇹🇷 土耳其 (Turkey) 02 - xia
+  - 🇹🇷 土耳其 (Turkey) 03 - xia
+  - 🇹🇷 土耳其 (Turkey) 04 - xia
 rules:
 - MATCH,PROXIES
