@@ -6,39 +6,65 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xia
   type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 02 - xia
-  type: ss
-  server: creativegermany.zanity.net
-  port: 5228
-  cipher: chacha20-ietf-poly1305
-  password: IdU1jzHh7ZszbUC5v2mA9W
-  udp: true
-- name: 🇩🇪 德国 (Germany) 03 - xia
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 03 - xia
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 04 - xia
+  type: vless
+  server: content1.movieham.ir
+  port: 5494
+  uuid: ac76e123-d0e9-4448-8689-b6b984e73c40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SzDv43wbpLLk6ADfHa8P6lsHTEa1d3zf6BSzVtdsHSc
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 05 - xia
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
   network: ws
   ws-opts:
-    path: /vless/
+    path: /linkvws
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 04 - xia
+      Host: ''
+- name: 🇩🇪 德国 (Germany) 06 - xia
   type: vless
   server: 163.8.195.241
   port: 2087
@@ -51,24 +77,24 @@ proxies:
     path: /29c8fed7ca22
     headers:
       Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 05 - xia
+- name: 🇩🇪 德国 (Germany) 07 - xia
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 06 - xia
+- name: 🇩🇪 德国 (Germany) 08 - xia
   type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
   udp: true
-- name: 🇩🇪 德国 (Germany) 07 - xia
+- name: 🇩🇪 德国 (Germany) 09 - xia
   type: vless
   server: 81.95.4.189
   port: 443
@@ -82,26 +108,21 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 08 - xia
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - xia
-  type: vmess
-  server: me6.movieseryalirani.ir
-  port: 57361
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 10 - xia
   type: vless
-  server: 35.157.240.237
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 11 - xia
+  type: vless
+  server: 81.95.4.189
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -113,9 +134,21 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 11 - xia
+- name: 🇩🇪 德国 (Germany) 12 - xia
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 13 - xia
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -123,6 +156,65 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - xia
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 15 - xia
+  type: ss
+  server: 130.61.238.52
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BO6mQRYPVN+LbfT/BQz06AmexVkBefyT2OPoIx32TXc=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 16 - xia
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 17 - xia
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - xia
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - xia
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 20 - xia
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,6 +231,15 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 09 - xia
   - 🇩🇪 德国 (Germany) 10 - xia
   - 🇩🇪 德国 (Germany) 11 - xia
+  - 🇩🇪 德国 (Germany) 12 - xia
+  - 🇩🇪 德国 (Germany) 13 - xia
+  - 🇩🇪 德国 (Germany) 14 - xia
+  - 🇩🇪 德国 (Germany) 15 - xia
+  - 🇩🇪 德国 (Germany) 16 - xia
+  - 🇩🇪 德国 (Germany) 17 - xia
+  - 🇩🇪 德国 (Germany) 18 - xia
+  - 🇩🇪 德国 (Germany) 19 - xia
+  - 🇩🇪 德国 (Germany) 20 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -155,5 +256,14 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 09 - xia
   - 🇩🇪 德国 (Germany) 10 - xia
   - 🇩🇪 德国 (Germany) 11 - xia
+  - 🇩🇪 德国 (Germany) 12 - xia
+  - 🇩🇪 德国 (Germany) 13 - xia
+  - 🇩🇪 德国 (Germany) 14 - xia
+  - 🇩🇪 德国 (Germany) 15 - xia
+  - 🇩🇪 德国 (Germany) 16 - xia
+  - 🇩🇪 德国 (Germany) 17 - xia
+  - 🇩🇪 德国 (Germany) 18 - xia
+  - 🇩🇪 德国 (Germany) 19 - xia
+  - 🇩🇪 德国 (Germany) 20 - xia
 rules:
 - MATCH,PROXIES
