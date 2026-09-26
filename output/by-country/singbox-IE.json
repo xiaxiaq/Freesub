@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xia"
+        "🇮🇪 IE 01 - xia",
+        "🇮🇪 IE 02 - xia",
+        "🇮🇪 IE 03 - xia",
+        "🇮🇪 IE 04 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xia"
+        "🇮🇪 IE 01 - xia",
+        "🇮🇪 IE 02 - xia",
+        "🇮🇪 IE 03 - xia",
+        "🇮🇪 IE 04 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },

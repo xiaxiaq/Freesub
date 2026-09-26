@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇾 CY 01 - xia",
+        "🇨🇾 CY 02 - xia",
+        "🇨🇾 CY 03 - xia",
+        "🇨🇾 CY 04 - xia",
+        "🇨🇾 CY 05 - xia",
+        "🇨🇾 CY 06 - xia",
+        "🇨🇾 CY 07 - xia",
+        "🇨🇾 CY 08 - xia",
+        "🇨🇾 CY 09 - xia",
+        "🇨🇾 CY 10 - xia",
+        "🇨🇾 CY 11 - xia"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇾 CY 01 - xia",
+        "🇨🇾 CY 02 - xia",
+        "🇨🇾 CY 03 - xia",
+        "🇨🇾 CY 04 - xia",
+        "🇨🇾 CY 05 - xia",
+        "🇨🇾 CY 06 - xia",
+        "🇨🇾 CY 07 - xia",
+        "🇨🇾 CY 08 - xia",
+        "🇨🇾 CY 09 - xia",
+        "🇨🇾 CY 10 - xia",
+        "🇨🇾 CY 11 - xia"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
