@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xia
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇲🇾 MY 02 - xia
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -27,22 +14,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 03 - xia
+- name: 🇲🇾 MY 02 - xia
   type: vless
-  server: www.visa.com.sg
-  port: 8880
-  uuid: deee4a60-e8c3-456f-846f-aa2c2b7fae24
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: broad-bush-c2c8.37-9a0.workers.dev
-- name: 🇲🇾 MY 04 - xia
-  type: vless
-  server: platform128.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -50,10 +24,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform128
+    path: /platform107
     headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 05 - xia
+      Host: platform107.golnamakcert.top
+- name: 🇲🇾 MY 03 - xia
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -63,16 +37,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 06 - xia
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+- name: 🇲🇾 MY 04 - xia
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.golnamakcert.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,8 +59,6 @@ proxy-groups:
   - 🇲🇾 MY 02 - xia
   - 🇲🇾 MY 03 - xia
   - 🇲🇾 MY 04 - xia
-  - 🇲🇾 MY 05 - xia
-  - 🇲🇾 MY 06 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,7 +68,5 @@ proxy-groups:
   - 🇲🇾 MY 02 - xia
   - 🇲🇾 MY 03 - xia
   - 🇲🇾 MY 04 - xia
-  - 🇲🇾 MY 05 - xia
-  - 🇲🇾 MY 06 - xia
 rules:
 - MATCH,PROXIES
