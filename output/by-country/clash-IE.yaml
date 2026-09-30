@@ -19,33 +19,12 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xia
-  type: vless
-  server: 104.21.63.28
+  type: ss
+  server: 20.123.34.66
   port: 443
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: youxuanku.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: youxuanku.kdns.fr
-- name: 🇮🇪 IE 03 - xia
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - xia
   - 🇮🇪 IE 02 - xia
-  - 🇮🇪 IE 03 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - xia
   - 🇮🇪 IE 02 - xia
-  - 🇮🇪 IE 03 - xia
 rules:
 - MATCH,PROXIES
