@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xia"
+        "🇨🇾 CY 01 - xia",
+        "🇨🇾 CY 02 - xia",
+        "🇨🇾 CY 03 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xia"
+        "🇨🇾 CY 01 - xia",
+        "🇨🇾 CY 02 - xia",
+        "🇨🇾 CY 03 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
