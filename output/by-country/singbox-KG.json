@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - xia",
+        "🇰🇬 KG 02 - xia",
+        "🇰🇬 KG 03 - xia",
+        "🇰🇬 KG 04 - xia",
+        "🇰🇬 KG 05 - xia",
+        "🇰🇬 KG 06 - xia",
+        "🇰🇬 KG 07 - xia",
+        "🇰🇬 KG 08 - xia"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - xia",
+        "🇰🇬 KG 02 - xia",
+        "🇰🇬 KG 03 - xia",
+        "🇰🇬 KG 04 - xia",
+        "🇰🇬 KG 05 - xia",
+        "🇰🇬 KG 06 - xia",
+        "🇰🇬 KG 07 - xia",
+        "🇰🇬 KG 08 - xia"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
