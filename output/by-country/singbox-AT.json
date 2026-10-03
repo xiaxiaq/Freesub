@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇬 KG 01 - xia",
-        "🇰🇬 KG 02 - xia",
-        "🇰🇬 KG 03 - xia",
-        "🇰🇬 KG 04 - xia"
+        "🇦🇹 AT 01 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇬 KG 01 - xia",
-        "🇰🇬 KG 02 - xia",
-        "🇰🇬 KG 03 - xia",
-        "🇰🇬 KG 04 - xia"
+        "🇦🇹 AT 01 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
