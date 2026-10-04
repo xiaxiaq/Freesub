@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xia
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: stsr.hospitaldt.ir
+  port: 8443
+  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: stsr.hospitaldt.ir
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: stsr.hospitaldt.ir
 - name: 🇸🇪 SE 02 - xia
   type: vless
-  server: 89.22.224.146
-  port: 43788
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  server: 172.234.97.206
+  port: 8443
+  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  servername: stsr.hospitaldt.ir
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: 172.234.97.206
 proxy-groups:
 - name: PROXIES
   type: select
