@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+- name: 🇮🇱 IL 01 - xia
   type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
+  server: 45.144.172.123
+  port: 20998
   cipher: aes-256-gcm
-  password: ac9c0a7b
+  password: 78235e7dc55e9ad1
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+  - 🇮🇱 IL 01 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+  - 🇮🇱 IL 01 - xia
 rules:
 - MATCH,PROXIES
