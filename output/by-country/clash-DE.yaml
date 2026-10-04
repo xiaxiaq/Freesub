@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xia
-  type: vmess
-  server: 31.77.8.97
-  port: 110
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 02 - xia
   type: vless
   server: rubifen.adaspoloandco.com
   port: 443
@@ -28,99 +18,119 @@ proxies:
     path: /GOrbEh
     headers:
       Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 03 - xia
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 02 - xia
+  type: vmess
+  server: 185.177.229.128
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 03 - xia
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 - name: 🇩🇪 德国 (Germany) 04 - xia
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 05 - xia
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xia
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 05 - xia
-  type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 06 - xia
-  type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 07 - xia
-  type: vless
-  server: de-1.srv.dvzh.net
-  port: 443
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de-1.srv.dvzh.net
-  network: ws
-  ws-opts:
-    path: /upload/session
-    headers:
-      Host: de-1.srv.dvzh.net
 - name: 🇩🇪 德国 (Germany) 08 - xia
-  type: vless
-  server: 45.131.213.33
+  type: ss
+  server: 2.58.81.221
   port: 443
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de-1.srv.dvzh.net
-  network: ws
-  ws-opts:
-    path: /upload/session
-    headers:
-      Host: de-1.srv.dvzh.net
 - name: 🇩🇪 德国 (Germany) 09 - xia
   type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 31.77.8.97
+  port: 110
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 10 - xia
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
 - name: 🇩🇪 德国 (Germany) 11 - xia
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - xia
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  server: hikvision-plus.com
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 12 - xia
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 13 - xia
   type: vless
   server: 139.162.149.105
   port: 80
@@ -133,25 +143,31 @@ proxies:
     path: /
     headers:
       Host: 139.162.149.105
-- name: 🇩🇪 德国 (Germany) 13 - xia
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 14 - xia
-  type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: de.xelnivo.ir
+  port: 13805
+  uuid: 688fcedc-c730-47fb-9fc0-b5962a38788e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
+  servername: play.google.com
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 15 - xia
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 16 - xia
   type: vless
   server: 172.67.181.125
   port: 2083
@@ -165,62 +181,7 @@ proxies:
     path: /
     headers:
       Host: Site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 16 - xia
-  type: vless
-  server: de.xelnivo.ir
-  port: 13805
-  uuid: 688fcedc-c730-47fb-9fc0-b5962a38788e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
-  servername: play.google.com
-  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 17 - xia
-  type: vmess
-  server: 31.76.11.83
-  port: 23325
-  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 18 - xia
-  type: vmess
-  server: 31.76.11.83
-  port: 23325
-  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 19 - xia
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 20 - xia
-  type: vless
-  server: 139.162.149.105
-  port: 80
-  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 139.162.149.105
-- name: 🇩🇪 德国 (Germany) 21 - xia
   type: vless
   server: 104.21.35.244
   port: 2083
@@ -234,7 +195,54 @@ proxies:
     path: /
     headers:
       Host: Site.check-looks.space
+- name: 🇩🇪 德国 (Germany) 18 - xia
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - xia
+  type: vmess
+  server: 185.177.229.128
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 20 - xia
+  type: vmess
+  server: 185.177.229.128
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 21 - xia
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 22 - xia
+  type: vmess
+  server: 185.177.229.128
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 23 - xia
   type: vless
   server: freesocks.work
   port: 2052
@@ -247,26 +255,20 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 23 - xia
+- name: 🇩🇪 德国 (Germany) 24 - xia
   type: vless
-  server: hikvision-plus.com
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  server: de-1.srv.dvzh.net
+  port: 443
+  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: de-1.srv.dvzh.net
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /upload/session
     headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 24 - xia
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
+      Host: de-1.srv.dvzh.net
 proxy-groups:
 - name: PROXIES
   type: select
