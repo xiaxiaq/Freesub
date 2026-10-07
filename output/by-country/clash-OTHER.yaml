@@ -5,34 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xia
-  type: vless
-  server: 104.18.42.98
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: jmp1.907737.xyz
   network: ws
   ws-opts:
-    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
-      Host: a.cwvps.eu.org
+      Host: jmp1.907737.xyz
 - name: 🌐 其他地区 (Other) 02 - xia
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 03 - xia
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -45,77 +33,61 @@ proxies:
     path: /fpfp=chrome
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 03 - xia
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 04 - xia
   type: vless
-  server: 188.114.97.6
+  server: cf.130519.xyz
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /ws
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: a.cwvps.eu.org
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 05 - xia
   type: vless
-  server: 172.64.52.115
-  port: 8443
-  uuid: ce0cf224-1d6e-466e-a7e3-55aead76afed
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: aaa.abcai.online
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
-      Host: aaa.abcai.online
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 06 - xia
   type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: cf.877774.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: fr.api-music-fa.com
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 07 - xia
-  type: vless
-  server: 172.67.181.232
-  port: 2053
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 08 - xia
-  type: vless
-  server: 104.21.5.128
-  port: 2053
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 09 - xia
   type: vless
   server: 104.18.35.15
   port: 443
@@ -129,6 +101,34 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 08 - xia
+  type: vless
+  server: vless2.gem-audio4.us.ci
+  port: 443
+  uuid: 32900b5e-aedc-4fb2-9f06-e3f92d1e2422
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless2.gem-audio4.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2.gem-audio4.us.ci
+- name: 🌐 其他地区 (Other) 09 - xia
+  type: vless
+  server: vless4.gem-audio3.us.ci
+  port: 443
+  uuid: f759cead-5aca-4c72-8143-e802698da73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless4.gem-audio3.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless4.gem-audio3.us.ci
 - name: 🌐 其他地区 (Other) 10 - xia
   type: vless
   server: 172.67.195.79
@@ -145,73 +145,6 @@ proxies:
       Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 11 - xia
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 12 - xia
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 13 - xia
-  type: vless
-  server: 172.67.185.98
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🌐 其他地区 (Other) 14 - xia
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 15 - xia
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 16 - xia
-  type: vless
   server: 172.67.76.40
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -224,7 +157,35 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 17 - xia
+- name: 🌐 其他地区 (Other) 12 - xia
+  type: vless
+  server: 104.21.84.167
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 13 - xia
+  type: vless
+  server: 172.67.133.118
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 14 - xia
   type: vless
   server: 172.64.152.241
   port: 443
@@ -238,9 +199,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 18 - xia
+- name: 🌐 其他地区 (Other) 15 - xia
   type: vless
-  server: 104.16.10.135
+  server: 104.18.42.98
   port: 443
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
@@ -249,9 +210,93 @@ proxies:
   servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /ws#/?TELEGRAM--MTMVPN--MTMVPN?ed=512
+    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 16 - xia
+  type: vless
+  server: vless.gem-audio5.us.ci
+  port: 443
+  uuid: bd517e58-d1cb-4eee-bd58-5f2723e7cd02
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless.gem-audio5.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless.gem-audio5.us.ci
+- name: 🌐 其他地区 (Other) 17 - xia
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 18 - xia
+  type: vless
+  server: vless3.gem-audio4.us.ci
+  port: 443
+  uuid: 32900b5e-aedc-4fb2-9f06-e3f92d1e2422
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless3.gem-audio4.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless3.gem-audio4.us.ci
+- name: 🌐 其他地区 (Other) 19 - xia
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 20 - xia
+  type: vless
+  server: vless2.gem-audio5.us.ci
+  port: 443
+  uuid: bd517e58-d1cb-4eee-bd58-5f2723e7cd02
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless2.gem-audio5.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2.gem-audio5.us.ci
+- name: 🌐 其他地区 (Other) 21 - xia
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -275,6 +320,9 @@ proxy-groups:
   - 🌐 其他地区 (Other) 16 - xia
   - 🌐 其他地区 (Other) 17 - xia
   - 🌐 其他地区 (Other) 18 - xia
+  - 🌐 其他地区 (Other) 19 - xia
+  - 🌐 其他地区 (Other) 20 - xia
+  - 🌐 其他地区 (Other) 21 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -298,5 +346,8 @@ proxy-groups:
   - 🌐 其他地区 (Other) 16 - xia
   - 🌐 其他地区 (Other) 17 - xia
   - 🌐 其他地区 (Other) 18 - xia
+  - 🌐 其他地区 (Other) 19 - xia
+  - 🌐 其他地区 (Other) 20 - xia
+  - 🌐 其他地区 (Other) 21 - xia
 rules:
 - MATCH,PROXIES
