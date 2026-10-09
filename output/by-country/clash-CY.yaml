@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 CY 02 - xia
   type: vless
   server: 194.76.154.31
@@ -87,7 +87,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 08 - xia
   type: vless
   server: 194.76.154.31
@@ -99,7 +99,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 CY 09 - xia
   type: vless
   server: 194.76.154.31
@@ -113,6 +113,42 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 CY 10 - xia
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 11 - xia
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 CY 12 - xia
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 13 - xia
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -139,6 +175,9 @@ proxy-groups:
   - 🇨🇾 CY 08 - xia
   - 🇨🇾 CY 09 - xia
   - 🇨🇾 CY 10 - xia
+  - 🇨🇾 CY 11 - xia
+  - 🇨🇾 CY 12 - xia
+  - 🇨🇾 CY 13 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +193,8 @@ proxy-groups:
   - 🇨🇾 CY 08 - xia
   - 🇨🇾 CY 09 - xia
   - 🇨🇾 CY 10 - xia
+  - 🇨🇾 CY 11 - xia
+  - 🇨🇾 CY 12 - xia
+  - 🇨🇾 CY 13 - xia
 rules:
 - MATCH,PROXIES
