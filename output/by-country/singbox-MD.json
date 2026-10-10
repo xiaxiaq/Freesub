@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - xia",
+        "🇲🇩 MD 02 - xia",
+        "🇲🇩 MD 03 - xia",
+        "🇲🇩 MD 04 - xia",
+        "🇲🇩 MD 05 - xia",
+        "🇲🇩 MD 06 - xia",
+        "🇲🇩 MD 07 - xia",
+        "🇲🇩 MD 08 - xia",
+        "🇲🇩 MD 09 - xia",
+        "🇲🇩 MD 10 - xia",
+        "🇲🇩 MD 11 - xia",
+        "🇲🇩 MD 12 - xia",
+        "🇲🇩 MD 13 - xia",
+        "🇲🇩 MD 14 - xia",
+        "🇲🇩 MD 15 - xia",
+        "🇲🇩 MD 16 - xia",
+        "🇲🇩 MD 17 - xia"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - xia",
+        "🇲🇩 MD 02 - xia",
+        "🇲🇩 MD 03 - xia",
+        "🇲🇩 MD 04 - xia",
+        "🇲🇩 MD 05 - xia",
+        "🇲🇩 MD 06 - xia",
+        "🇲🇩 MD 07 - xia",
+        "🇲🇩 MD 08 - xia",
+        "🇲🇩 MD 09 - xia",
+        "🇲🇩 MD 10 - xia",
+        "🇲🇩 MD 11 - xia",
+        "🇲🇩 MD 12 - xia",
+        "🇲🇩 MD 13 - xia",
+        "🇲🇩 MD 14 - xia",
+        "🇲🇩 MD 15 - xia",
+        "🇲🇩 MD 16 - xia",
+        "🇲🇩 MD 17 - xia"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
