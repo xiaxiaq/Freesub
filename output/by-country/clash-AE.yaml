@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xia
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -32,6 +32,19 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - xia
   type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - xia
+  type: vless
   server: 31.57.190.49
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
@@ -44,7 +57,20 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 04 - xia
+- name: 🇦🇪 阿联酋 (UAE) 05 - xia
+  type: vless
+  server: 172.64.88.168
+  port: 8880
+  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: throbbing-haze-fbde.388-6c4.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - xia
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -57,7 +83,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - xia
+- name: 🇦🇪 阿联酋 (UAE) 07 - xia
   type: vless
   server: 31.57.190.17
   port: 443
@@ -71,6 +97,45 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 08 - xia
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - xia
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - xia
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,6 +146,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xia
   - 🇦🇪 阿联酋 (UAE) 04 - xia
   - 🇦🇪 阿联酋 (UAE) 05 - xia
+  - 🇦🇪 阿联酋 (UAE) 06 - xia
+  - 🇦🇪 阿联酋 (UAE) 07 - xia
+  - 🇦🇪 阿联酋 (UAE) 08 - xia
+  - 🇦🇪 阿联酋 (UAE) 09 - xia
+  - 🇦🇪 阿联酋 (UAE) 10 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,5 +161,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xia
   - 🇦🇪 阿联酋 (UAE) 04 - xia
   - 🇦🇪 阿联酋 (UAE) 05 - xia
+  - 🇦🇪 阿联酋 (UAE) 06 - xia
+  - 🇦🇪 阿联酋 (UAE) 07 - xia
+  - 🇦🇪 阿联酋 (UAE) 08 - xia
+  - 🇦🇪 阿联酋 (UAE) 09 - xia
+  - 🇦🇪 阿联酋 (UAE) 10 - xia
 rules:
 - MATCH,PROXIES
