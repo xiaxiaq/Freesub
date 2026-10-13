@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xia
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: K5sEvZiKmens104B
-  udp: true
-- name: 🇮🇪 IE 02 - xia
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -22,58 +15,20 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - xia
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
-- name: 🇮🇪 IE 04 - xia
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
-- name: 🇮🇪 IE 05 - xia
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: K5sEvZiKmens104B
-  udp: true
-- name: 🇮🇪 IE 06 - xia
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: K5sEvZiKmens104B
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - xia
-  - 🇮🇪 IE 02 - xia
-  - 🇮🇪 IE 03 - xia
-  - 🇮🇪 IE 04 - xia
-  - 🇮🇪 IE 05 - xia
-  - 🇮🇪 IE 06 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - xia
-  - 🇮🇪 IE 02 - xia
-  - 🇮🇪 IE 03 - xia
-  - 🇮🇪 IE 04 - xia
-  - 🇮🇪 IE 05 - xia
-  - 🇮🇪 IE 06 - xia
 rules:
 - MATCH,PROXIES
