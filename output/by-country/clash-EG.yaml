@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 UA 01 - xia
+- name: 🇪🇬 EG 01 - xia
   type: ss
-  server: 185.164.175.81
-  port: 19999
+  server: 38.54.59.102
+  port: 443
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: pKEW8JPByTVTLtM
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 UA 01 - xia
+  - 🇪🇬 EG 01 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 UA 01 - xia
+  - 🇪🇬 EG 01 - xia
 rules:
 - MATCH,PROXIES
