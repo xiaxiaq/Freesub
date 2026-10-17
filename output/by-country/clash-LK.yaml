@@ -19,7 +19,20 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 02 - xia
   type: vless
-  server: 104.17.73.206
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 03 - xia
+  type: vless
+  server: 104.17.72.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -31,27 +44,15 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 03 - xia
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 04 - xia
   type: vless
   server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -59,7 +60,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 05 - xia
   type: vless
-  server: 104.17.74.206
+  server: 104.17.70.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -73,7 +74,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 06 - xia
   type: vless
-  server: 104.17.72.206
+  server: 104.17.71.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -100,20 +101,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 08 - xia
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 09 - xia
-  type: vless
-  server: 104.17.70.206
+  server: 104.17.74.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -125,7 +113,7 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 10 - xia
+- name: 🇱🇰 LK 09 - xia
   type: vless
   server: centurylink.es
   port: 8443
@@ -139,15 +127,68 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 11 - xia
+- name: 🇱🇰 LK 10 - xia
   type: vless
   server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 11 - xia
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 12 - xia
+  type: vless
+  server: centurylink.es
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
   tls: true
   skip-cert-verify: true
   servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 13 - xia
+  type: vless
+  server: 104.17.73.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 14 - xia
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
@@ -169,6 +210,9 @@ proxy-groups:
   - 🇱🇰 LK 09 - xia
   - 🇱🇰 LK 10 - xia
   - 🇱🇰 LK 11 - xia
+  - 🇱🇰 LK 12 - xia
+  - 🇱🇰 LK 13 - xia
+  - 🇱🇰 LK 14 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -185,5 +229,8 @@ proxy-groups:
   - 🇱🇰 LK 09 - xia
   - 🇱🇰 LK 10 - xia
   - 🇱🇰 LK 11 - xia
+  - 🇱🇰 LK 12 - xia
+  - 🇱🇰 LK 13 - xia
+  - 🇱🇰 LK 14 - xia
 rules:
 - MATCH,PROXIES

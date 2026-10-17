@@ -6,6 +6,24 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xia
   type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 02 - xia
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 03 - xia
+  type: vless
   server: 38.244.186.167
   port: 8445
   uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
@@ -16,37 +34,7 @@ proxies:
     public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
   servername: www.samsung.com
   client-fingerprint: firefox
-- name: 🇵🇱 PL 02 - xia
-  type: vless
-  server: 38.244.186.167
-  port: 8445
-  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - xia
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - xia
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 05 - xia
   type: vless
   server: 2.26.225.89
   port: 8443
@@ -64,7 +52,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - xia
   - 🇵🇱 PL 03 - xia
   - 🇵🇱 PL 04 - xia
-  - 🇵🇱 PL 05 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,6 +61,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - xia
   - 🇵🇱 PL 03 - xia
   - 🇵🇱 PL 04 - xia
-  - 🇵🇱 PL 05 - xia
 rules:
 - MATCH,PROXIES
