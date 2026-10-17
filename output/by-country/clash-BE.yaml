@@ -4,13 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
-  type: vmess
-  server: 183.109.131.75
-  port: 20086
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
+- name: 🇧🇪 BE 01 - xia
+  type: vless
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
   udp: true
   tls: false
   skip-cert-verify: true
@@ -18,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+  - 🇧🇪 BE 01 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xia
+  - 🇧🇪 BE 01 - xia
 rules:
 - MATCH,PROXIES
