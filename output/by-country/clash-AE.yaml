@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xia
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,7 +19,21 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - xia
   type: vless
-  server: 84.235.244.108
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 03 - xia
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -30,34 +44,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - xia
-  type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 04 - xia
-  type: vless
-  server: 185.253.116.33
-  port: 14430
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 05 - xia
   type: vless
   server: 31.57.190.15
   port: 443
@@ -69,6 +56,20 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 05 - xia
+  type: vless
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 06 - xia
@@ -86,7 +87,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - xia
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -98,6 +99,33 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - xia
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - xia
+  type: vless
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 10 - xia
   type: vless
   server: 31.57.190.15
   port: 443
@@ -111,46 +139,6 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 09 - xia
-  type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 10 - xia
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - xia
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -166,7 +154,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - xia
   - 🇦🇪 阿联酋 (UAE) 09 - xia
   - 🇦🇪 阿联酋 (UAE) 10 - xia
-  - 🇦🇪 阿联酋 (UAE) 11 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -182,6 +169,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - xia
   - 🇦🇪 阿联酋 (UAE) 09 - xia
   - 🇦🇪 阿联酋 (UAE) 10 - xia
-  - 🇦🇪 阿联酋 (UAE) 11 - xia
 rules:
 - MATCH,PROXIES
