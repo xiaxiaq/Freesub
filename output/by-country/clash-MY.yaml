@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xia
   type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /platform128
+    path: /fp=chrome
     headers:
-      Host: platform128.halalkhor.info
+      Host: ccc.010304.xyz
 - name: 🇲🇾 MY 02 - xia
   type: vless
   server: 111.90.143.184
@@ -31,18 +32,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇲🇾 MY 03 - xia
   type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /platform128
     headers:
-      Host: ccc.010304.xyz
+      Host: platform128.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
