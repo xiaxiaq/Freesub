@@ -28,6 +28,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 04 - xia
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +43,7 @@ proxy-groups:
   - 🇷🇴 RO 01 - xia
   - 🇷🇴 RO 02 - xia
   - 🇷🇴 RO 03 - xia
+  - 🇷🇴 RO 04 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +52,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - xia
   - 🇷🇴 RO 02 - xia
   - 🇷🇴 RO 03 - xia
+  - 🇷🇴 RO 04 - xia
 rules:
 - MATCH,PROXIES
