@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xia
   type: vless
-  server: 149.104.90.21
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -21,10 +21,10 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 149.104.90.21
+  servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 03 - xia
   type: vless
-  server: mx001.zestapp778.com
+  server: 149.104.90.21
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,7 +33,7 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 04 - xia
   type: vless
-  server: 149.104.90.21
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -43,33 +43,6 @@ proxies:
 - name: 🇲🇽 MX 05 - xia
   type: vless
   server: mx001.zestapp778.com
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mx001.zestapp778.com
-- name: 🇲🇽 MX 06 - xia
-  type: vless
-  server: mx001.zestapp778.com
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mx001.zestapp778.com
-- name: 🇲🇽 MX 07 - xia
-  type: vless
-  server: mx001.zestapp778.com
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mx001.zestapp778.com
-- name: 🇲🇽 MX 08 - xia
-  type: vless
-  server: 149.104.90.21
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -86,9 +59,6 @@ proxy-groups:
   - 🇲🇽 MX 03 - xia
   - 🇲🇽 MX 04 - xia
   - 🇲🇽 MX 05 - xia
-  - 🇲🇽 MX 06 - xia
-  - 🇲🇽 MX 07 - xia
-  - 🇲🇽 MX 08 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,8 +69,5 @@ proxy-groups:
   - 🇲🇽 MX 03 - xia
   - 🇲🇽 MX 04 - xia
   - 🇲🇽 MX 05 - xia
-  - 🇲🇽 MX 06 - xia
-  - 🇲🇽 MX 07 - xia
-  - 🇲🇽 MX 08 - xia
 rules:
 - MATCH,PROXIES
