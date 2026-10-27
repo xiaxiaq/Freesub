@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xia
-  type: ss
-  server: location8.cpanel-host10.ir
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - xia
   type: vless
   server: 155.103.71.142
   port: 443
@@ -25,21 +18,50 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - xia
-  type: ss
-  server: 206.1.103.237
-  port: 19999
-  cipher: 2022-blake3-aes-256-gcm
-  password: 1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM=
+- name: 🇹🇷 土耳其 (Turkey) 02 - xia
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - xia
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 04 - xia
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - xia
   type: ss
-  server: 87.236.166.178
-  port: 56137
+  server: 87.236.166.217
+  port: 56134
   cipher: chacha20-ietf-poly1305
   password: uvKNudV-N8AUCrykPiyznA
   udp: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - xia
+- name: 🇹🇷 土耳其 (Turkey) 06 - xia
   type: vless
   server: 155.103.71.142
   port: 443
@@ -53,6 +75,39 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 07 - xia
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 08 - xia
+  type: ss
+  server: 206.1.103.237
+  port: 19999
+  cipher: 2022-blake3-aes-256-gcm
+  password: 1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM=
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 09 - xia
+  type: ss
+  server: 87.236.166.88
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 10 - xia
+  type: ss
+  server: location8.cpanel-host10.ir
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +118,11 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xia
   - 🇹🇷 土耳其 (Turkey) 04 - xia
   - 🇹🇷 土耳其 (Turkey) 05 - xia
+  - 🇹🇷 土耳其 (Turkey) 06 - xia
+  - 🇹🇷 土耳其 (Turkey) 07 - xia
+  - 🇹🇷 土耳其 (Turkey) 08 - xia
+  - 🇹🇷 土耳其 (Turkey) 09 - xia
+  - 🇹🇷 土耳其 (Turkey) 10 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +133,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xia
   - 🇹🇷 土耳其 (Turkey) 04 - xia
   - 🇹🇷 土耳其 (Turkey) 05 - xia
+  - 🇹🇷 土耳其 (Turkey) 06 - xia
+  - 🇹🇷 土耳其 (Turkey) 07 - xia
+  - 🇹🇷 土耳其 (Turkey) 08 - xia
+  - 🇹🇷 土耳其 (Turkey) 09 - xia
+  - 🇹🇷 土耳其 (Turkey) 10 - xia
 rules:
 - MATCH,PROXIES

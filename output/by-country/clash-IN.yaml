@@ -15,8 +15,20 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xia
+  type: vless
+  server: 178.212.35.198
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03 - xia
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -29,7 +41,20 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 03 - xia
+- name: 🇮🇳 印度 (India) 04 - xia
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 05 - xia
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -40,8 +65,59 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - xia
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 06 - xia
+  type: vless
+  server: in.smrtai.top
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 07 - xia
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 08 - xia
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 09 - xia
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 10 - xia
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -63,6 +139,12 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xia
   - 🇮🇳 印度 (India) 03 - xia
   - 🇮🇳 印度 (India) 04 - xia
+  - 🇮🇳 印度 (India) 05 - xia
+  - 🇮🇳 印度 (India) 06 - xia
+  - 🇮🇳 印度 (India) 07 - xia
+  - 🇮🇳 印度 (India) 08 - xia
+  - 🇮🇳 印度 (India) 09 - xia
+  - 🇮🇳 印度 (India) 10 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +154,11 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xia
   - 🇮🇳 印度 (India) 03 - xia
   - 🇮🇳 印度 (India) 04 - xia
+  - 🇮🇳 印度 (India) 05 - xia
+  - 🇮🇳 印度 (India) 06 - xia
+  - 🇮🇳 印度 (India) 07 - xia
+  - 🇮🇳 印度 (India) 08 - xia
+  - 🇮🇳 印度 (India) 09 - xia
+  - 🇮🇳 印度 (India) 10 - xia
 rules:
 - MATCH,PROXIES
