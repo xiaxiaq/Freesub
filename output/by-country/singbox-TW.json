@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 - xia",
-        "🇲🇽 MX 02 - xia",
-        "🇲🇽 MX 03 - xia",
-        "🇲🇽 MX 04 - xia",
-        "🇲🇽 MX 05 - xia"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 - xia",
-        "🇲🇽 MX 02 - xia",
-        "🇲🇽 MX 03 - xia",
-        "🇲🇽 MX 04 - xia",
-        "🇲🇽 MX 05 - xia"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
