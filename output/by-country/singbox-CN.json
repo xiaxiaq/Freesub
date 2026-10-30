@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇳 CN 01 - xia",
+        "🇨🇳 CN 02 - xia",
+        "🇨🇳 CN 03 - xia",
+        "🇨🇳 CN 04 - xia",
+        "🇨🇳 CN 05 - xia",
+        "🇨🇳 CN 06 - xia"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇳 CN 01 - xia",
+        "🇨🇳 CN 02 - xia",
+        "🇨🇳 CN 03 - xia",
+        "🇨🇳 CN 04 - xia",
+        "🇨🇳 CN 05 - xia",
+        "🇨🇳 CN 06 - xia"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
