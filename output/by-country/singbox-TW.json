@@ -6,20 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT 01 - xia",
-        "🇱🇹 LT 02 - xia",
-        "🇱🇹 LT 03 - xia",
-        "🇱🇹 LT 04 - xia"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xia",
+        "🇹🇼 中国台湾 (Taiwan) 02 - xia"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT 01 - xia",
-        "🇱🇹 LT 02 - xia",
-        "🇱🇹 LT 03 - xia",
-        "🇱🇹 LT 04 - xia"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xia",
+        "🇹🇼 中国台湾 (Taiwan) 02 - xia"
       ],
       "url": "https://www.google.com/generate_204"
     },
