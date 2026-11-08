@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xia
   type: vless
-  server: 104.16.10.9
+  server: 104.16.111.195
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -20,21 +20,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - xia
   type: vless
-  server: n04.jinggai.online
-  port: 8443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  server: 104.18.42.98
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: n04.jinggai.online
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
+    path: /tyxyws
     headers:
-      Host: n04.jinggai.online
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - xia
   type: vless
-  server: 104.21.0.87
+  server: 104.16.111.102
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 04 - xia
   type: vless
-  server: 104.18.42.98
+  server: 104.17.50.227
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -62,7 +62,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 05 - xia
   type: vless
-  server: 104.19.12.94
+  server: 104.19.48.107
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -71,12 +71,12 @@ proxies:
   servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    path: /tyxyws
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 06 - xia
   type: vless
-  server: 104.19.164.155
+  server: 104.16.10.56
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -90,21 +90,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 07 - xia
   type: vless
-  server: 104.16.10.104
+  server: 188.114.98.0
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: tn1r.eu.cc
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /id-pusat#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
-      Host: jp3.yohototo.top
+      Host: tn1r.eu.cc
 - name: 🌐 其他地区 (Other) 08 - xia
   type: vless
-  server: 104.19.164.155
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -118,21 +118,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 09 - xia
   type: vless
-  server: n04.jinggai.online
-  port: 8443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: n04.jinggai.online
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
+    path: /tyxyws
     headers:
-      Host: n04.jinggai.online
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 10 - xia
   type: vless
-  server: 104.16.10.72
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -146,7 +146,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 11 - xia
   type: vless
-  server: 104.24.31.89
+  server: 104.18.153.10
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -160,7 +160,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 12 - xia
   type: vless
-  server: 172.67.217.240
+  server: 104.17.210.74
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -174,7 +174,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 13 - xia
   type: vless
-  server: 104.19.12.94
+  server: 104.27.46.35
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -187,24 +187,22 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 14 - xia
-  type: vmess
-  server: 104.21.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.14.232
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: or3.sfacg.uk
+  servername: nuclear.us.kg
   network: ws
   ws-opts:
-    path: /or3
+    path: /free/1.226.227.169:50001
     headers:
-      Host: or3.sfacg.uk
+      Host: nuclear.us.kg
 - name: 🌐 其他地区 (Other) 15 - xia
   type: vless
-  server: 104.16.10.9
+  server: 104.16.111.195
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -218,21 +216,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 16 - xia
   type: vless
-  server: 104.16.10.234
+  server: 172.67.141.182
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: ce440dcf-e570-4a50-af37-bf588ee8a988
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: 6qwoom7kdrcoan3ui4ra5dy.pages.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /vl/KSPdmco70dfoXFS292o2Nv6yPt?ed=2560
     headers:
-      Host: jp3.yohototo.top
+      Host: 6qwoom7kdrcoan3ui4ra5dy.pages.dev
 - name: 🌐 其他地区 (Other) 17 - xia
   type: vless
-  server: 162.159.254.3
+  server: 104.19.33.25
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -246,7 +244,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 18 - xia
   type: vless
-  server: 104.21.70.21
+  server: 104.18.42.98
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -260,7 +258,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 19 - xia
   type: vless
-  server: 104.16.10.22
+  server: 104.16.10.72
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -273,38 +271,36 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 20 - xia
-  type: vmess
-  server: 188.114.96.3
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.26.1.117
+  port: 443
+  uuid: bdde0eb9-62c6-4d30-ac96-ab10d8eb7939
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
+  servername: erupencompanypdr.pages.dev
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /ISoOMY675XVPxHG4?ed=2560
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: erupencompanypdr.pages.dev
 - name: 🌐 其他地区 (Other) 21 - xia
   type: vless
-  server: 104.21.58.37
-  port: 2053
-  uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
+  server: 104.16.0.1
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fast.145779.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /ws-tesla
+    path: /tyxyws
     headers:
-      Host: fast.145779.xyz
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 22 - xia
   type: vless
-  server: 104.21.6.186
+  server: 162.159.254.3
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -318,7 +314,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 23 - xia
   type: vless
-  server: 104.19.48.107
+  server: 104.19.12.94
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -327,40 +323,40 @@ proxies:
   servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 24 - xia
   type: vless
-  server: 172.64.190.13
+  server: 172.64.150.248
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /
     headers:
-      Host: jp3.yohototo.top
+      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
 - name: 🌐 其他地区 (Other) 25 - xia
   type: vless
-  server: 104.16.10.48
+  server: 188.114.96.3
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 5b716e51-489e-4e97-b5c8-dd10803eff93
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: Telegram+channel+:+@pandavpntc
     headers:
-      Host: jp3.yohototo.top
+      Host: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
 - name: 🌐 其他地区 (Other) 26 - xia
   type: vless
-  server: 172.67.217.240
+  server: 162.159.254.3
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -374,21 +370,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 27 - xia
   type: vless
-  server: 104.19.48.107
+  server: 172.64.147.154
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /
     headers:
-      Host: jp3.yohototo.top
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
 - name: 🌐 其他地区 (Other) 28 - xia
   type: vless
-  server: 104.21.0.87
+  server: 104.16.0.1
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -402,21 +398,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 29 - xia
   type: vless
-  server: 104.16.10.135
+  server: 172.67.160.192
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: nuclear.us.kg
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /free/1.226.227.169:50001
     headers:
-      Host: jp3.yohototo.top
+      Host: nuclear.us.kg
 - name: 🌐 其他地区 (Other) 30 - xia
   type: vless
-  server: 104.21.219.160
+  server: 104.16.10.48
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -428,6 +424,104 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 31 - xia
+  type: vless
+  server: 188.114.97.3
+  port: 443
+  uuid: 27135ee3-0829-4dbc-ae3e-b70e86e5d510
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
+  network: ws
+  ws-opts:
+    path: Telegram+channel+:+@pandavpntc
+    headers:
+      Host: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
+- name: 🌐 其他地区 (Other) 32 - xia
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 33 - xia
+  type: vless
+  server: 172.67.160.192
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nuclear.us.kg
+  network: ws
+  ws-opts:
+    path: /free/103.101.153.32:443
+    headers:
+      Host: nuclear.us.kg
+- name: 🌐 其他地区 (Other) 34 - xia
+  type: vless
+  server: 104.19.12.94
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 35 - xia
+  type: vless
+  server: 172.64.147.154
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+- name: 🌐 其他地区 (Other) 36 - xia
+  type: vless
+  server: 172.64.149.65
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+- name: 🌐 其他地区 (Other) 37 - xia
+  type: vless
+  server: 104.26.1.117
+  port: 443
+  uuid: bdde0eb9-62c6-4d30-ac96-ab10d8eb7939
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: erupencompanypdr.pages.dev
+  network: ws
+  ws-opts:
+    path: /ISoOMY675XVPxHG4?ed=2560
+    headers:
+      Host: erupencompanypdr.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -463,6 +557,13 @@ proxy-groups:
   - 🌐 其他地区 (Other) 28 - xia
   - 🌐 其他地区 (Other) 29 - xia
   - 🌐 其他地区 (Other) 30 - xia
+  - 🌐 其他地区 (Other) 31 - xia
+  - 🌐 其他地区 (Other) 32 - xia
+  - 🌐 其他地区 (Other) 33 - xia
+  - 🌐 其他地区 (Other) 34 - xia
+  - 🌐 其他地区 (Other) 35 - xia
+  - 🌐 其他地区 (Other) 36 - xia
+  - 🌐 其他地区 (Other) 37 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -498,5 +599,12 @@ proxy-groups:
   - 🌐 其他地区 (Other) 28 - xia
   - 🌐 其他地区 (Other) 29 - xia
   - 🌐 其他地区 (Other) 30 - xia
+  - 🌐 其他地区 (Other) 31 - xia
+  - 🌐 其他地区 (Other) 32 - xia
+  - 🌐 其他地区 (Other) 33 - xia
+  - 🌐 其他地区 (Other) 34 - xia
+  - 🌐 其他地区 (Other) 35 - xia
+  - 🌐 其他地区 (Other) 36 - xia
+  - 🌐 其他地区 (Other) 37 - xia
 rules:
 - MATCH,PROXIES
