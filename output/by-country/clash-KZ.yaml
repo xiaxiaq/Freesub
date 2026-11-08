@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - xia
+- name: 🇰🇿 KZ 01 - xia
   type: vless
-  server: 8.6.112.0
+  server: 38.107.234.57
   port: 8443
-  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+  servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /vless/
     headers:
-      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - xia
+  - 🇰🇿 KZ 01 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - xia
+  - 🇰🇿 KZ 01 - xia
 rules:
 - MATCH,PROXIES
