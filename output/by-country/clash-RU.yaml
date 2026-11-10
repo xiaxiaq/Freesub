@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xia
   type: vless
-  server: 45.151.101.151
-  port: 8443
-  uuid: 03440720-a4ee-4dfe-917a-e699cedadead
+  server: 185.178.208.167
+  port: 443
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: XAgtlMYY1aqEH5wud540D7lPIokZOgkpHy2ch-DS0DM
-  servername: queuev4.vk.com
-  client-fingerprint: random
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xia
   type: ss
   server: 38.60.223.125
@@ -24,27 +26,6 @@ proxies:
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xia
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xia
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xia
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -59,8 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xia
   - 🇷🇺 俄罗斯 (Russia) 02 - xia
   - 🇷🇺 俄罗斯 (Russia) 03 - xia
-  - 🇷🇺 俄罗斯 (Russia) 04 - xia
-  - 🇷🇺 俄罗斯 (Russia) 05 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xia
   - 🇷🇺 俄罗斯 (Russia) 02 - xia
   - 🇷🇺 俄罗斯 (Russia) 03 - xia
-  - 🇷🇺 俄罗斯 (Russia) 04 - xia
-  - 🇷🇺 俄罗斯 (Russia) 05 - xia
 rules:
 - MATCH,PROXIES
