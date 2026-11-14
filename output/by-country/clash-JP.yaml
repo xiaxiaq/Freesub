@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xia
   type: vless
-  server: 104.21.0.87
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 02 - xia
   type: vless
-  server: 172.67.217.240
+  server: 104.24.0.1
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -33,230 +33,20 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - xia
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 04 - xia
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 05 - xia
-  type: vless
-  server: 216.167.127.197
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 06 - xia
-  type: vless
-  server: 104.19.33.25
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - xia
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - xia
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - xia
-  type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - xia
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - xia
-  type: ss
-  server: 168.138.205.100
-  port: 53758
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-  udp: true
-- name: 🇯🇵 日本 (Japan) 12 - xia
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - xia
-  type: vless
-  server: 46.250.248.210
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇯🇵 日本 (Japan) 14 - xia
-  type: vless
-  server: 62.106.75.37
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - xia
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - xia
   type: ss
   server: 84.247.155.196
   port: 443
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 17 - xia
-  type: vless
-  server: 104.16.0.1
+- name: 🇯🇵 日本 (Japan) 04 - xia
+  type: ss
+  server: 84.247.155.196
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - xia
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - xia
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - xia
+- name: 🇯🇵 日本 (Japan) 05 - xia
   type: vless
   server: 13.140.248.125
   port: 443
@@ -270,9 +60,9 @@ proxies:
     path: /e3e2aa65089989f0
     headers:
       Host: xray-p1vi234h-lunar-forest-6.cloady.io
-- name: 🇯🇵 日本 (Japan) 21 - xia
+- name: 🇯🇵 日本 (Japan) 06 - xia
   type: vless
-  server: 172.67.217.240
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -284,119 +74,37 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 22 - xia
-  type: vless
-  server: 104.21.6.186
+- name: 🇯🇵 日本 (Japan) 07 - xia
+  type: vmess
+  server: JP032009.ssgreen.org
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: ac5f3041-2767-4f2d-a173-29555b868b3e
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: JP032009.ssgreen.org
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /wes
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 23 - xia
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 24 - xia
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - xia
+      Host: JP032009.ssgreen.org
+- name: 🇯🇵 日本 (Japan) 08 - xia
   type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  server: 168.138.205.100
+  port: 53758
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
   udp: true
-- name: 🇯🇵 日本 (Japan) 26 - xia
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 27 - xia
+- name: 🇯🇵 日本 (Japan) 09 - xia
   type: ss
-  server: 84.247.155.196
-  port: 80
+  server: 154.36.158.197
+  port: 8388
   cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  password: BeaUf9c0AEWH40Pu
   udp: true
-- name: 🇯🇵 日本 (Japan) 28 - xia
-  type: vless
-  server: 45.129.8.204
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 29 - xia
-  type: vless
-  server: 45.66.129.12
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - xia
-  type: vless
-  server: 45.142.126.184
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - xia
+- name: 🇯🇵 日本 (Japan) 10 - xia
   type: vless
   server: 172.67.217.240
   port: 443
@@ -410,24 +118,10 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 32 - xia
+- name: 🇯🇵 日本 (Japan) 11 - xia
   type: vless
-  server: 104.16.10.72
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 33 - xia
-  type: vless
-  server: 104.16.10.234
-  port: 443
+  server: 154.31.114.162
+  port: 8443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
@@ -454,28 +148,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 - xia
   - 🇯🇵 日本 (Japan) 10 - xia
   - 🇯🇵 日本 (Japan) 11 - xia
-  - 🇯🇵 日本 (Japan) 12 - xia
-  - 🇯🇵 日本 (Japan) 13 - xia
-  - 🇯🇵 日本 (Japan) 14 - xia
-  - 🇯🇵 日本 (Japan) 15 - xia
-  - 🇯🇵 日本 (Japan) 16 - xia
-  - 🇯🇵 日本 (Japan) 17 - xia
-  - 🇯🇵 日本 (Japan) 18 - xia
-  - 🇯🇵 日本 (Japan) 19 - xia
-  - 🇯🇵 日本 (Japan) 20 - xia
-  - 🇯🇵 日本 (Japan) 21 - xia
-  - 🇯🇵 日本 (Japan) 22 - xia
-  - 🇯🇵 日本 (Japan) 23 - xia
-  - 🇯🇵 日本 (Japan) 24 - xia
-  - 🇯🇵 日本 (Japan) 25 - xia
-  - 🇯🇵 日本 (Japan) 26 - xia
-  - 🇯🇵 日本 (Japan) 27 - xia
-  - 🇯🇵 日本 (Japan) 28 - xia
-  - 🇯🇵 日本 (Japan) 29 - xia
-  - 🇯🇵 日本 (Japan) 30 - xia
-  - 🇯🇵 日本 (Japan) 31 - xia
-  - 🇯🇵 日本 (Japan) 32 - xia
-  - 🇯🇵 日本 (Japan) 33 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -492,27 +164,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 - xia
   - 🇯🇵 日本 (Japan) 10 - xia
   - 🇯🇵 日本 (Japan) 11 - xia
-  - 🇯🇵 日本 (Japan) 12 - xia
-  - 🇯🇵 日本 (Japan) 13 - xia
-  - 🇯🇵 日本 (Japan) 14 - xia
-  - 🇯🇵 日本 (Japan) 15 - xia
-  - 🇯🇵 日本 (Japan) 16 - xia
-  - 🇯🇵 日本 (Japan) 17 - xia
-  - 🇯🇵 日本 (Japan) 18 - xia
-  - 🇯🇵 日本 (Japan) 19 - xia
-  - 🇯🇵 日本 (Japan) 20 - xia
-  - 🇯🇵 日本 (Japan) 21 - xia
-  - 🇯🇵 日本 (Japan) 22 - xia
-  - 🇯🇵 日本 (Japan) 23 - xia
-  - 🇯🇵 日本 (Japan) 24 - xia
-  - 🇯🇵 日本 (Japan) 25 - xia
-  - 🇯🇵 日本 (Japan) 26 - xia
-  - 🇯🇵 日本 (Japan) 27 - xia
-  - 🇯🇵 日本 (Japan) 28 - xia
-  - 🇯🇵 日本 (Japan) 29 - xia
-  - 🇯🇵 日本 (Japan) 30 - xia
-  - 🇯🇵 日本 (Japan) 31 - xia
-  - 🇯🇵 日本 (Japan) 32 - xia
-  - 🇯🇵 日本 (Japan) 33 - xia
 rules:
 - MATCH,PROXIES
