@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xia
-  type: vless
-  server: 104.18.79.242
-  port: 443
-  uuid: bb2a729c-6185-4170-8769-6f5b9f64d5b8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cloud-sync-3d1512-gw.maziarkish.workers.dev
-  network: ws
-  ws-opts:
-    path: /11290579a72cdb4e?ed=2560
-    headers:
-      Host: cloud-sync-3d1512-gw.maziarkish.workers.dev
-- name: 🇨🇿 CZ 02 - xia
   type: ss
   server: 194.87.233.93
   port: 46190
@@ -31,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xia
-  - 🇨🇿 CZ 02 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xia
-  - 🇨🇿 CZ 02 - xia
 rules:
 - MATCH,PROXIES
