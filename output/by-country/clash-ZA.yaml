@@ -23,13 +23,6 @@ proxies:
   server: 102.133.161.245
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: jrZ3MZlOiue8Yjrd
-  udp: true
-- name: 🇿🇦 ZA 04 - xia
-  type: ss
-  server: 102.133.161.245
-  port: 443
-  cipher: chacha20-ietf-poly1305
   password: 3DsS0OglPsfUyTZz
   udp: true
 proxy-groups:
@@ -40,7 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xia
   - 🇿🇦 ZA 02 - xia
   - 🇿🇦 ZA 03 - xia
-  - 🇿🇦 ZA 04 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xia
   - 🇿🇦 ZA 02 - xia
   - 🇿🇦 ZA 03 - xia
-  - 🇿🇦 ZA 04 - xia
 rules:
 - MATCH,PROXIES
