@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xia
   type: vless
+  server: 147.45.221.225
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xia
+  type: vless
   server: 136.148.83.70
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
@@ -13,20 +27,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xia
-  type: vless
-  server: 147.45.175.81
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xsru2.freeddns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xia
   type: vless
   server: 147.45.221.225
@@ -43,14 +43,23 @@ proxies:
       Host: 147.45.221.225
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xia
   type: vless
-  server: 136.148.83.69
+  server: 136.148.83.71
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: wccfu-ru-79dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xia
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xia
   type: vless
   server: 136.148.83.69
   port: 443
@@ -69,6 +78,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xia
   - 🇷🇺 俄罗斯 (Russia) 04 - xia
   - 🇷🇺 俄罗斯 (Russia) 05 - xia
+  - 🇷🇺 俄罗斯 (Russia) 06 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,5 +89,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xia
   - 🇷🇺 俄罗斯 (Russia) 04 - xia
   - 🇷🇺 俄罗斯 (Russia) 05 - xia
+  - 🇷🇺 俄罗斯 (Russia) 06 - xia
 rules:
 - MATCH,PROXIES
