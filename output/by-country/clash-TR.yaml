@@ -6,29 +6,54 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xia
   type: vless
-  server: 172.64.155.209
-  port: 443
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  server: 143.246.136.128
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sinavm3.soft10.ir
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - xia
+  type: vless
+  server: v2new.nimbaha9.ir
+  port: 8080
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /XDS45
     headers:
-      Host: sinavm3.soft10.ir
+      Host: v2new.nimbaha9.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - xia
+  type: vless
+  server: raha.ertebatgoostar.ir
+  port: 80
+  uuid: 8c49bed5-dbb2-4c0d-a2f1-2577b12c6c66
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xia
+  - 🇹🇷 土耳其 (Turkey) 02 - xia
+  - 🇹🇷 土耳其 (Turkey) 03 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xia
+  - 🇹🇷 土耳其 (Turkey) 02 - xia
+  - 🇹🇷 土耳其 (Turkey) 03 - xia
 rules:
 - MATCH,PROXIES
