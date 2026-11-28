@@ -5,27 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xia
-  type: ss
-  server: 172.99.189.142
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 46.105.222.153
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.153
 - name: 🇫🇷 法国 (France) 02 - xia
-  type: ss
-  server: 167.17.64.175
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 03 - xia
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 04 - xia
   type: vless
   server: ov-france1.09vpn.com
   port: 80
@@ -38,34 +28,157 @@ proxies:
     path: /vless/
     headers:
       Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 05 - xia
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+- name: 🇫🇷 法国 (France) 03 - xia
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 06 - xia
+  servername: None
+- name: 🇫🇷 法国 (France) 04 - xia
   type: ss
   server: 38.109.228.110
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇫🇷 法国 (France) 05 - xia
+  type: vmess
+  server: 172.99.189.239
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 06 - xia
+  type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
 - name: 🇫🇷 法国 (France) 07 - xia
+  type: ss
+  server: 167.17.64.175
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 08 - xia
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 09 - xia
+  type: vmess
+  server: 46.105.222.156
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 10 - xia
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 11 - xia
   type: ss
   server: 167.17.64.27
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 08 - xia
+- name: 🇫🇷 法国 (France) 12 - xia
+  type: vmess
+  server: 162.19.82.57
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 162.19.82.57
+- name: 🇫🇷 法国 (France) 13 - xia
+  type: ss
+  server: 23.162.152.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - xia
+  type: ss
+  server: 23.162.152.245
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ySGkGhr2sKHV
+  udp: true
+- name: 🇫🇷 法国 (France) 15 - xia
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 16 - xia
+  type: vmess
+  server: 23.162.152.127
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 17 - xia
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.155
+- name: 🇫🇷 法国 (France) 18 - xia
+  type: vmess
+  server: 46.105.222.156
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.156
+- name: 🇫🇷 法国 (France) 19 - xia
   type: vless
   server: 188.114.99.137
   port: 80
@@ -78,23 +191,9 @@ proxies:
     path: /
     headers:
       Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 09 - xia
-  type: ss
-  server: 23.162.152.245
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ySGkGhr2sKHV
-  udp: true
-- name: 🇫🇷 法国 (France) 10 - xia
-  type: ss
-  server: 167.17.64.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 11 - xia
+- name: 🇫🇷 法国 (France) 20 - xia
   type: vmess
-  server: 91.134.35.72
+  server: 79.137.99.183
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -102,10 +201,23 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 91.134.35.72
-- name: 🇫🇷 法国 (France) 12 - xia
+  servername: None
+- name: 🇫🇷 法国 (France) 21 - xia
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 22 - xia
   type: vmess
-  server: 23.162.152.127
+  server: 46.105.222.153
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -113,10 +225,10 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 13 - xia
+  servername: None
+- name: 🇫🇷 法国 (France) 23 - xia
   type: vmess
-  server: 172.99.189.239
+  server: 46.105.222.157
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -124,7 +236,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: None
 proxy-groups:
 - name: PROXIES
   type: select
@@ -143,6 +255,16 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - xia
   - 🇫🇷 法国 (France) 12 - xia
   - 🇫🇷 法国 (France) 13 - xia
+  - 🇫🇷 法国 (France) 14 - xia
+  - 🇫🇷 法国 (France) 15 - xia
+  - 🇫🇷 法国 (France) 16 - xia
+  - 🇫🇷 法国 (France) 17 - xia
+  - 🇫🇷 法国 (France) 18 - xia
+  - 🇫🇷 法国 (France) 19 - xia
+  - 🇫🇷 法国 (France) 20 - xia
+  - 🇫🇷 法国 (France) 21 - xia
+  - 🇫🇷 法国 (France) 22 - xia
+  - 🇫🇷 法国 (France) 23 - xia
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -161,5 +283,15 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - xia
   - 🇫🇷 法国 (France) 12 - xia
   - 🇫🇷 法国 (France) 13 - xia
+  - 🇫🇷 法国 (France) 14 - xia
+  - 🇫🇷 法国 (France) 15 - xia
+  - 🇫🇷 法国 (France) 16 - xia
+  - 🇫🇷 法国 (France) 17 - xia
+  - 🇫🇷 法国 (France) 18 - xia
+  - 🇫🇷 法国 (France) 19 - xia
+  - 🇫🇷 法国 (France) 20 - xia
+  - 🇫🇷 法国 (France) 21 - xia
+  - 🇫🇷 法国 (France) 22 - xia
+  - 🇫🇷 法国 (France) 23 - xia
 rules:
 - MATCH,PROXIES
